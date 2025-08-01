@@ -10,16 +10,11 @@ import Subtitle from "../ui/Subtitle";
 
 const heroSlider = [
   {
-    subtitle: "Bussiness Growth",
-    title: "Digital Marketing Consulting solutions",
+    subtitle: "Welcome to GRC Capital",
+    title:
+      "Embracing Creativity in <br/> Risk and Structured Finance Solutions",
     img: banners_home_hero_1,
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
-  },
-  {
-    subtitle: "Bussiness Growth",
-    title: "Digital Marketing Consulting solutions",
-    img: banners_home_hero_1,
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.",
+    text: "Providing Innovative, Calculated Financial Solutions for Development, Real Estate, Trading, Oil & Gas, and Beyond.",
   },
 ];
 
@@ -51,10 +46,13 @@ const HomeHero = () => {
                 }}
               />
               <div className="flex grow shrink justify-start items-center size-full pt-20 pb-[180px] relative z-[1]">
-                <div className="lg:w-1/2 py-[100px] flex-col max-lg:flex-wrap">
+                <div className="lg:w-[60%] py-[100px] flex-col max-lg:flex-wrap">
                   <div className="pb-[50px] *:not-last:mb-2.5">
                     <Subtitle white>{item.subtitle}</Subtitle>
-                    <h1 className="capitalize text-white">{item.title}</h1>
+                    <h1
+                      className="text-white leading-[1.1]"
+                      dangerouslySetInnerHTML={{ __html: item.title }}
+                    />
                     <p className="pr-[10%] text-white">{item.text}</p>
                   </div>
                   <div>

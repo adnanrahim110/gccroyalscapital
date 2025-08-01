@@ -16,3 +16,30 @@ export const navigation = [
     url: "/contact-us",
   },
 ]
+
+export const reviews = [
+  {
+    name: "John Doe",
+    title: "CEO",
+    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
+    img: "",
+  },
+  {
+    name: "John Doe",
+    title: "CEO",
+    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
+    img: "",
+  },
+  {
+    name: "John Doe",
+    title: "CEO",
+    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
+    img: "",
+  },
+  {
+    name: "John Doe",
+    title: "CEO",
+    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
+    img: "",
+  },
+]
