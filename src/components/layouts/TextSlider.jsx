@@ -24,7 +24,7 @@ const TextSlider = () => {
                   <span className="flex h-auto text-center relative p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]">
                     <img
                       src={fav}
-                      className="w-[100px] max-w-[100px] grayscale hover:grayscale-0 transition-all duration-200 ease-in-out cursor-pointer"
+                      className="w-[140px] max-w-[140px] grayscale hover:grayscale-0 transition-all duration-200 ease-in-out cursor-pointer"
                       alt=""
                     />
                   </span>
