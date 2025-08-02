@@ -32,7 +32,7 @@ export const contactDetails = [
   },
   {
     title: "Email",
-    url: "mailto: info@grccapitals.com",
+    url: "mailto:info@grccapitals.com",
     text: " info@grccapitals.com",
     icon: IoMail
   },
