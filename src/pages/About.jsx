@@ -36,18 +36,9 @@ const About = () => {
                 <div className="inline">
                   Our experienced team provides tailored office
                 </div>
-                <div className="inline-block">
-                  <img src={brain} className="size-8" />
-                </div>
                 <div className="inline">support and</div>
                 <div className="inline text-primary">smart solutions</div>
-                <div className="inline-block">
-                  <img src={heart} className="size-8" />
-                </div>
                 <div className="inline">to help businesses</div>
-                <div className="inline-block">
-                  <img src={hand} className="size-8" />
-                </div>
                 <div className="inline">
                   operate efficiently, no matter the size or sector.
                 </div>
