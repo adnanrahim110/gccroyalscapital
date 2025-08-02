@@ -23,27 +23,21 @@ const SwiperBtn = ({ direction, onClick, w_h, bg, white = false }) => {
       }`}
       onClick={onClick}
     >
-      <svg
-        className={`lg:w-7 w-[26px] h-auto object-contain origin-center ${
-          isPrev
-            ? "group-hover:[animation:btn-arrow-move-r_0.375s_linear]"
-            : "group-hover:[animation:btn-arrow-move_0.375s_linear]"
-        }`}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="24"
-        height="24"
-        color="currentColor"
-        fill="none"
-      >
-        <path
-          d={svgPath}
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        ></path>
-      </svg>
+      {isPrev ? (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 100 100"
+          style={{ enableBackground: "new 0 0 100 100" }}
+        >
+          <path d="M2.5,50l53.4-30.9v61.7L2.5,50z M97.5,50v5.3H50.6V50v-5.3h46.9V50z"></path>
+        </svg>
+      ) : (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.7 18">
+          <path d="M12.1,18V10.6H0V7.4H12.1V0L27.7,9Z"></path>
+        </svg>
+      )}
     </div>
   );
 };
