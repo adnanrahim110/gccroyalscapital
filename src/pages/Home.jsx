@@ -30,7 +30,9 @@ const Home = () => {
                     <div className="lg:w-1/2 flex flex-col grow-0 shrink basis-auto gap-y-[50px] pb-20">
                       <div className="*:mb-2.5">
                         <Subtitle>Cash Flow First</Subtitle>
-                        <h2>GRC Capital: Creative Finance, Controlled Risk</h2>
+                        <h2 className="lg:pr-10">
+                          Creative Finance, Controlled Risk
+                        </h2>
                         <p className="lg:pr-[15%]">
                           At GRC Capital, we specialize in providing innovative
                           and strategic financial solutions. Our approach
