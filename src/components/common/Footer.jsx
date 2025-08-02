@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="lg:w-[65%] flex flex-col">
-            <div className="flex flex-col lg:flex-row w-full gap-[30px] border-b border-b-[#D0D0D033] pb-[60px]">
+            <div className="flex flex-col lg:flex-row w-full gap-[30px] border-b border-b-[#D0D0D033] pb-10">
               <div className="max-w-full w-[300px]">
                 <h4 className="text-white">Register For Our Updates!</h4>
               </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="inline-grid items-baseline grid-cols-[25px_1fr]">
+                    <div className="inline-grid items-baseline grid-cols-[25px_1fr] ml-2">
                       <input type="checkbox" />
                       <p className="text-white text-[1em]">
                         I acknowledge all the Terms & Conditions
@@ -67,26 +67,124 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-[30px] pt-12">
-              <h5 className="text-white">Quick Links</h5>
-              <ul className="flex items-center gap-5 lg:gap-8">
-                {navigation.map((nav, idx) => (
-                  <li key={idx}>
+            <div className="flex flex-col lg:flex-row gap-5">
+              <div className="lg:w-1/3 grow-0 shrink basis-auto flex flex-col gap-[30px] pt-12">
+                <h5 className="text-white">Support Pages</h5>
+                <ul className="flex gap-4 flex-col">
+                  <li>
                     <Link
-                      to={nav.url}
+                      to="/about-us"
                       className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
                     >
-                      {nav.title}
+                      About
                     </Link>
                   </li>
-                ))}
-              </ul>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      TTerms & Conditions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Risk Disclosure
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="lg:w-1/3 grow-0 shrink basis-auto flex flex-col gap-[30px] pt-12">
+                <h5 className="text-white">About</h5>
+                <ul className="flex gap-4 flex-col">
+                  <li>
+                    <Link
+                      to="/about-us"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Our Story
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/about-us"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Client Testimonials
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Security Promise
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="lg:w-1/3 grow-0 shrink basis-auto flex flex-col gap-[30px] pt-12">
+                <h5 className="text-white">Quick Links</h5>
+                <ul className="flex gap-4 flex-col">
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/contact-us"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      FAQ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Market Overview
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
         <div className="w-full flex justify-between py-[30px] text-white">
           <p>© {new Date().getFullYear()} GCC Capitals. All Rights Reserved</p>
-          {/* <ul className="flex flex-wrap -mx-[25px]">
+          <ul className="flex flex-wrap -mx-[25px]">
             <li className="mx-[25px] relative [work-break:break-word] flex after:absolute after:h-3/5 after:border-l after:border-l-[#ddd] after:top-1/2 after:-translate-y-1/2 after:-right-[25px]">
               <Link className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out">
                 Privacy Policy
@@ -97,7 +195,7 @@ const Footer = () => {
                 Terms & Conditions
               </Link>
             </li>
-          </ul> */}
+          </ul>
         </div>
       </div>
     </footer>

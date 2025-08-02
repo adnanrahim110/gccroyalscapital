@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, FaXTwitter } from "
 import { GrLocation } from "react-icons/gr"
 import { HiPhone } from "react-icons/hi"
 import { IoMail } from "react-icons/io5"
-import { reviews_m1, reviews_m2, reviews_m3, reviews_w1, reviews_w2, s1, s2, s3, s4, s5 } from "../assets"
+import { reviews_m1, reviews_m2, reviews_m3, reviews_s1_i, reviews_s2_i, reviews_s3_i, reviews_s4_i, reviews_s5_i, reviews_w1, reviews_w2, s1, s2, s3, s4, s5 } from "../assets"
 
 export const navigation = [
   {
@@ -69,29 +69,34 @@ export const socialDetails = [
 
 export const services = [
   {
-    title: "Growth Strategy",
+    title: "Growth <br/> Strategy",
     text: "Drive expansion through intelligent planning, sector insights, and risk-aligned funding models.",
     img: s1,
+    icon: reviews_s1_i
   },
   {
-    title: "Technology Upgrade",
+    title: "Technology <br/>  Upgrade",
     text: "Enable operational transformation through digital investments and scalable financial tools.",
     img: s2,
+    icon: reviews_s2_i
   },
   {
-    title: "Finance Advisory",
+    title: "Finance <br/>  Advisory",
     text: "From capital structuring to regulatory alignment, our team offers actionable, expert financial advice.",
     img: s3,
+    icon: reviews_s3_i
   },
   {
-    title: "Risk Planning",
+    title: "Risk <br/>  Planning",
     text: "Safeguard your investments with proactive risk identification, analysis, and mitigation frameworks.",
     img: s4,
+    icon: reviews_s4_i
   },
   {
     title: "Process Management",
     text: "Enhance business performance through financial process optimization and strategic resource planning.",
     img: s5,
+    icon: reviews_s5_i
   },
 ];
 

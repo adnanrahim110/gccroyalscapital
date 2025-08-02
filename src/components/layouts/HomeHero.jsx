@@ -44,12 +44,12 @@ const HomeHero = () => {
                   backgroundPosition: "center left",
                 }}
               />
-              <div className="flex grow shrink justify-start items-center size-full pt-20 pb-[180px] relative z-[1]">
+              <div className="flex grow shrink justify-start items-center size-full pt-20 pb-[180px] mx-auto xl:max-w-[1300px] relative z-[1]">
                 <div className="lg:w-[45%] py-[100px] flex-col max-lg:flex-wrap">
                   <div className="pb-[50px] *:not-last:mb-2.5">
                     <Subtitle white>{item.subtitle}</Subtitle>
                     <h1 className="text-white leading-[1.1]">
-                      Creative Risk &{" "}
+                      Creative Risk <br className="hidden xl:block" /> &{" "}
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-200">
                         Finance
                       </span>{" "}

@@ -17,16 +17,14 @@ const Faqs = () => {
           <div className="*:not-last:mb-2.5 text-white text-center lg:text-left">
             <Subtitle white>Our Faq</Subtitle>
             <h2 className="text-white">
-              Answers To&nbsp;
+              Frequently Asked&nbsp;
               <span className="inline-block bg-clip-text mr-[0.2em] text-transparent bg-gradient-to-r from-primary-500 to-primary-300">
-                Your
+                Questions
               </span>
-              Questions
             </h2>
             <p>
-              Get clear answers to the most common questions about our
-              structures, sectors, and timelines. If you don’t see what you
-              need, reach out and we’ll tailor a reply to your case.
+              Have questions about our services, processes, or financial
+              products? Here are some of the most commonly asked questions.
             </p>
           </div>
           <div className="w-full space-y-5">
@@ -127,7 +125,11 @@ const Faqs = () => {
                       <div className="w-fit">
                         <h5 className="text-[1.25em] font-semibold">
                           <Wrapper
-                            {...(item.url && { to: item.url })}
+                            {...(item.url && {
+                              to: item.url,
+                              target: "_blank",
+                            })}
+                            {...(idx === 0 && { rel: "noopener" })}
                             className=""
                           >
                             {item.text}

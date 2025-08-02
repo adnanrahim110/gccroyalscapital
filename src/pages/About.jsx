@@ -109,22 +109,22 @@ const About = () => {
               <div className="w-auto -m-2.5 2xl:-m-5 flex flex-wrap">
                 {[
                   {
-                    title: "Expert Skills.",
+                    title: "Expert Skills",
                     text: "Our team brings decades of experience in structured finance, project evaluation, and deal execution across global markets.",
                     img: skill,
                   },
                   {
-                    title: "Our Process.",
-                    text: "We follow a disciplined yet flexible approach — combining financial modeling, industry insights, and risk analytics.",
+                    title: "Our Process",
+                    text: "We follow a disciplined yet flexible approach combining financial modeling, industry insights, and risk analytics.",
                     img: process,
                   },
                   {
-                    title: "Main Focus.",
+                    title: "Main Focus",
                     text: "Maximizing returns while minimizing exposure — that's our promise, no matter how complex the deal.",
                     img: focus,
                   },
                   {
-                    title: "Our Network.",
+                    title: "Our Network",
                     text: "Strategic partnerships with global institutions, lenders, and investors ensure robust capital flows and secure transactions.",
                     img: network,
                   },

@@ -135,7 +135,7 @@
   }
 
   section>div, footer>div {
-    @apply lg:w-full mx-auto max-lg:max-w-[980px] max-[1280px]:max-w-[1100px] min-[1320px]:max-w-[1300px] relative z-[1];
+    @apply lg:w-full mx-auto max-lg:max-w-[980px] max-[1280px]:max-w-[1100px] xl:max-w-[1300px] relative z-[1];
   }
 
   svg {

@@ -17,7 +17,7 @@ const TextSlider = () => {
               {textSliderData.map((text, i) => (
                 <React.Fragment key={i}>
                   <span
-                    className={`text-[clamp(4.375rem,3.539rem_+_3.8217vw,8.125rem)] capitalize leading-[1.15] font-semibold inline-block text-black/10 p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]`}
+                    className={`text-[clamp(4.375rem,3.539rem_+_3.8217vw,8.125rem)] capitalize leading-[1.15] font-semibold inline-block text-black/10 hover:text-primary-500 transition-colors duration-300 ease-linear p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]`}
                   >
                     {text}
                   </span>

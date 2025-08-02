@@ -42,7 +42,7 @@ const Reviews = ({ second = false }) => {
               />
               <div className="pb-[50px] *:not-last:mb-2.5 relative z-[1]">
                 <h4>
-                  Trusted By Over <br /> 1300 Loyal Clients
+                  Trusted By Over <br /> 100+ Loyal Clients
                 </h4>
                 <div>
                   From real estate developers to oil & gas innovators, our
