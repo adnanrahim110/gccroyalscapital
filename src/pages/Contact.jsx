@@ -39,8 +39,11 @@ const Contact = () => {
                     return (
                       <div key={idx} className="w-full p-5">
                         <Wrapper
-                          {...(item.url && { to: item.url, target: "_blank" })}
-                          {...(idx === 0 && { rel: "noopener" })}
+                          {...(item.url && { to: item.url })}
+                          {...(idx === 0 && {
+                            rel: "noopener",
+                            target: "_blank",
+                          })}
                           className="inline-flex items-center gap-[clamp(0.9375rem,0.8333rem_+_0.3472vw,1.25rem)] group"
                         >
                           <div className="bg-white p-[13px] rounded-xl inline-flex">

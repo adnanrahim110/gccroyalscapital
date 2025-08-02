@@ -1,11 +1,15 @@
 import { useSwiperSlide } from "swiper/react";
 
-function ServiceSlide({ service }) {
+function ServiceSlide({ service, dark = false }) {
   const slide = useSwiperSlide();
   const isActive = slide?.isActive ?? false;
 
   return (
-    <div className="h-[471px] flex flex-col-reverse bg-black/50 text-start justify-start p-2.5 rounded-[20px] transition-all duration-300 ease-in-out backdrop-blur-[10px] group">
+    <div
+      className={`h-[471px] flex flex-col-reverse ${
+        dark ? "bg-white/[0.08]" : "bg-black/50"
+      } text-start justify-start p-2.5 rounded-[20px] transition-all duration-300 ease-in-out backdrop-blur-[10px] group`}
+    >
       <div className="grid h-full place-items-start z-[1]">
         <div className="relative rounded-[20px] transition-all duration-300 ease-in-out h-full">
           <img

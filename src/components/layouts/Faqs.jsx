@@ -125,9 +125,11 @@ const Faqs = () => {
                           <Wrapper
                             {...(item.url && {
                               to: item.url,
-                              target: "_blank",
                             })}
-                            {...(idx === 0 && { rel: "noopener" })}
+                            {...(idx === 0 && {
+                              target: "_blank",
+                              rel: "noopener",
+                            })}
                             className=""
                           >
                             {item.text}

@@ -5,6 +5,7 @@ import ContactForm from "../components/layouts/ContactForm";
 import Faqs from "../components/layouts/Faqs";
 import HomeHero from "../components/layouts/HomeHero";
 import Reviews from "../components/layouts/Reviews";
+import ServiceSec from "../components/layouts/ServiceSec";
 import TextSlider from "../components/layouts/TextSlider";
 import Button from "../components/ui/Button";
 import Subtitle from "../components/ui/Subtitle";
@@ -133,7 +134,8 @@ const Home = () => {
         </div>
       </section>
       <TextSlider />
-      <Reviews />
+      <ServiceSec second />
+      <Reviews second />
       <Faqs />
       <ContactForm />
     </>
