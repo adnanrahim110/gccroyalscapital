@@ -66,6 +66,28 @@
   }
 }
 
+@keyframes btn-arrow-move-r {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  49% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @keyframes text-marquee {
   0% {
     transform: translateX(0) translateZ(0);

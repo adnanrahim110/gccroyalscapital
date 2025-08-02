@@ -10,16 +10,21 @@ const SwiperBtn = ({ direction, onClick, w_h, bg }) => {
   return (
     <div
       className={`absolute ${w_h || "lg:w-14 lg:h-14"} ${
-        bg || "bg-transparent hover:bg-black"
-      } border-1 border-black text-black rounded-full inline-flex items-center justify-center w-[38px] h-[38px] transition-all duration-200 ease-[cubic-bezier(0.42,0,0.58,1)] z-[1] top-1/2 max-lg:-translate-y-1/2 lg:top-full lg:mt-10 2xl:mt-0 2xl:top-[50%] 2xl:-translate-y-[50%] cursor-pointer ${
+        bg ||
+        "bg-transparent hover:bg-gradient-to-r from-primary-400 to-secondary-200"
+      } border-1 border-black hover:border-transparent text-black  rounded-full inline-flex items-center justify-center w-[38px] h-[38px] transition-all duration-300 ease-[cubic-bezier(0.42,0,0.58,1)] z-[1] top-1/2 max-lg:-translate-y-1/2 lg:top-full lg:mt-10 2xl:mt-0 2xl:top-[50%] 2xl:-translate-y-[50%] cursor-pointer group ${
         isPrev
-          ? "lg:pr-px -left-2.5 lg:left-[44%] 2xl:-left-20 right-auto"
-          : "lg:pl-0.5 -right-2.5 lg:right-[44%] 2xl:-right-20 left-auto"
+          ? "lg:pr-px -left-2.5 lg:left-[44.8%] 2xl:-left-20 right-auto"
+          : "lg:pl-0.5 -right-2.5 lg:right-[44.8%] 2xl:-right-20 left-auto"
       }`}
       onClick={onClick}
     >
       <svg
-        className="lg:w-7 w-[26px] h-auto object-contain origin-center"
+        className={`lg:w-7 w-[26px] h-auto object-contain origin-center ${
+          isPrev
+            ? "group-hover:[animation:btn-arrow-move-r_0.375s_linear]"
+            : "group-hover:[animation:btn-arrow-move_0.375s_linear]"
+        }`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         width="24"
