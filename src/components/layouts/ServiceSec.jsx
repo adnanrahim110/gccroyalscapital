@@ -8,7 +8,7 @@ import Subtitle from "../ui/Subtitle";
 import SwiperBtn from "../ui/SwiperBtn";
 import ServiceSlide from "./ServiceSlide";
 
-const ServiceSec = ({ second = true }) => {
+const ServiceSec = ({ second = false }) => {
   const swiperRef = useRef(null);
   return (
     <section
