@@ -1,5 +1,5 @@
 import React from "react";
-import { fav } from "../../assets";
+import { fav, logo3 } from "../../assets";
 
 const textSliderData = [
   "Recognized for exellence",
@@ -23,8 +23,8 @@ const TextSlider = () => {
                   </span>
                   <span className="flex h-auto text-center relative p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]">
                     <img
-                      src={fav}
-                      className="w-[140px] max-w-[140px] grayscale hover:grayscale-0 transition-all duration-200 ease-in-out cursor-pointer"
+                      src={logo3}
+                      className="w-[250px] max-w-[250px] grayscale hover:grayscale-0 transition-all duration-200 ease-in-out cursor-pointer"
                       alt=""
                     />
                   </span>
