@@ -10,7 +10,7 @@ const Header = () => {
     <header className="absolute z-[999] w-full">
       <div className="px-[30px] flex">
         <div className="grow shrink size-full pt-[30px]">
-          <div className="flex items-center max-lg:justify-between p-5 lg:px-[30px] relative before:bg-white/10 before:backdrop-blur-[10px] before:absolute before:border before:border-white/10 rounded-xl before:rounded-xl before:inset-0 *:relative *:z-[2]">
+          <div className="flex items-center max-lg:justify-between max-lg:p-5 lg:px-[30px] relative before:bg-white/10 before:backdrop-blur-[10px] before:absolute before:border before:border-white/10 rounded-xl before:rounded-xl before:inset-0 *:relative *:z-[2]">
             <div className="lg:w-1/4">
               <Link to="/" className="flex items-center size-full">
                 <img
