@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Company from "../svgs/Company";
 import Company2 from "../svgs/Company2";
 import Company3 from "../svgs/Company3";
-import Finance from "../svgs/finance";
+import Finance from "../svgs/Finance";
 import Finance2 from "../svgs/Finance2";
 import Growtech from "../svgs/Growtech";
 import Growth from "../svgs/Growth";
