@@ -120,7 +120,7 @@ const About = () => {
                   },
                   {
                     title: "Main Focus",
-                    text: "Maximizing returns while minimizing exposure — that's our promise, no matter how complex the deal.",
+                    text: "Maximizing returns while minimizing exposure that's our promise, no matter how complex the deal.",
                     img: focus,
                   },
                   {

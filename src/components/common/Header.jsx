@@ -29,7 +29,7 @@ const Header = () => {
                   >
                     <Link
                       to={item.url}
-                      className={`inline-block p-[33px_22px] align-middle relative capitalize text-white hover:text-secondary-200 transition-all duration-300 ease-linear`}
+                      className={`inline-block p-[33px_22px] align-middle relative capitalize text-white hover:text-secondary transition-all duration-300 ease-linear`}
                     >
                       <span
                         className={`before:absolute before:size-[7px] before:top-0 before:bottom-0 before:left-2 before:right-auto before:m-auto before:rounded-full ${
