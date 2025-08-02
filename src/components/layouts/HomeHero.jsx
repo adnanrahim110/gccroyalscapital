@@ -11,8 +11,7 @@ import Subtitle from "../ui/Subtitle";
 const heroSlider = [
   {
     subtitle: "Welcome to GRC Capital",
-    title:
-      "Embracing Creativity in <br/> Risk and Structured Finance Solutions",
+    title: "Creative Risk & Finance Solutions",
     img: banners_home_hero_1,
     text: "Providing Innovative, Calculated Financial Solutions for Development, Real Estate, Trading, Oil & Gas, and Beyond.",
   },
@@ -39,20 +38,23 @@ const HomeHero = () => {
               }}
             >
               <div
-                className="absolute top-0 left-0 size-full bg-black opacity-40 bg-no-repeat bg-contain brightness-[20%] contrast-100 saturate-100 origin-[100%_50%] animate-zoomEffect"
+                className="absolute top-0 left-0 size-full bg-black opacity-55 bg-no-repeat bg-contain brightness-[20%] contrast-100 saturate-100 origin-[100%_50%] animate-zoomEffect"
                 style={{
                   backgroundImage: `url(${hero_shade})`,
                   backgroundPosition: "center left",
                 }}
               />
               <div className="flex grow shrink justify-start items-center size-full pt-20 pb-[180px] relative z-[1]">
-                <div className="lg:w-[60%] py-[100px] flex-col max-lg:flex-wrap">
+                <div className="lg:w-[45%] py-[100px] flex-col max-lg:flex-wrap">
                   <div className="pb-[50px] *:not-last:mb-2.5">
                     <Subtitle white>{item.subtitle}</Subtitle>
-                    <h1
-                      className="text-white leading-[1.1]"
-                      dangerouslySetInnerHTML={{ __html: item.title }}
-                    />
+                    <h1 className="text-white leading-[1.1]">
+                      Creative Risk &{" "}
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-200">
+                        Finance
+                      </span>{" "}
+                      Solutions
+                    </h1>
                     <p className="pr-[10%] text-white">{item.text}</p>
                   </div>
                   <div>
