@@ -28,10 +28,11 @@ const Services = () => {
         className="bg-center bg-no-repeat -mt-10 lg:rounded-t-[40px] relative overflow-hidden"
         style={{ backgroundImage: `url(${shade_3})` }}
       >
+        <span className="absolute inset-0 block bg-white/80" />
         <div className="flex pt-[100px] pb-[260px] flex-col relative z-[1]">
-          <div className="w-full pb-[60px] space-y-2.5 text-center text-white">
-            <Subtitle white>Professional Guidance</Subtitle>
-            <h2 className="text-white">
+          <div className="w-full pb-[60px] space-y-2.5 text-center text-black">
+            <Subtitle>Professional Guidance</Subtitle>
+            <h2 className="text-black">
               Precision <span className="text-primary">Tailored</span> Services
             </h2>
             <p>
@@ -66,10 +67,10 @@ const Services = () => {
                 },
               }}
               spaceBetween={30}
-              className="serv_Slider"
+              className="serv_Slider *:items-stretch!"
             >
               {services.map((service, idx) => (
-                <SwiperSlide key={idx}>
+                <SwiperSlide key={idx} className="h-full!">
                   <ServiceSlide service={service} />
                 </SwiperSlide>
               ))}

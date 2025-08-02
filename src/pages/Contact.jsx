@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Brands from "../components/layouts/Brands";
 import Form from "../components/ui/Form";
 import Hero from "../components/ui/Hero";
@@ -33,23 +34,34 @@ const Contact = () => {
               </div>
               <div>
                 <div className="flex -m-5 flex-wrap">
-                  {contactDetails.map((item, idx) => (
-                    <div key={idx} className="w-full p-5">
-                      <div className="inline-flex items-center gap-[clamp(0.9375rem,0.8333rem_+_0.3472vw,1.25rem)]">
-                        <div className="bg-white p-[13px] rounded-xl inline-flex">
-                          <div className="text-[clamp(1.5rem,1.4164rem_+_0.3822vw,1.875rem)] p-3 bg-gradient-to-r from-primary-400 to-secondary-200 bg-center rounded-lg text-black inline-flex items-center">
-                            {<item.icon />}
+                  {contactDetails.map((item, idx) => {
+                    const Wrapper = item.url ? Link : "div";
+                    return (
+                      <div key={idx} className="w-full p-5">
+                        <Wrapper
+                          {...(item.url && { to: item.url, target: "_blank" })}
+                          {...(idx === 0 && { rel: "noopener" })}
+                          className="inline-flex items-center gap-[clamp(0.9375rem,0.8333rem_+_0.3472vw,1.25rem)] group"
+                        >
+                          <div className="bg-white p-[13px] rounded-xl inline-flex">
+                            <div className="text-[clamp(1.5rem,1.4164rem_+_0.3822vw,1.875rem)] p-3 bg-gradient-to-r from-primary-400 to-secondary-200 bg-center rounded-lg text-black inline-flex items-center group-hover:scale-110 transition-all duration-300 ease-in-out">
+                              {<item.icon />}
+                            </div>
                           </div>
-                        </div>
-                        <div>
-                          <div className="mb-2.5 text-black">
-                            <h5 className="text-xl text-black">{item.title}</h5>
+                          <div>
+                            <div className="mb-2.5 text-black">
+                              <h5 className="text-xl text-black">
+                                {item.title}
+                              </h5>
+                            </div>
+                            <p className="text-[15px] group-hover:text-primary transition-colors duration-300 ease-in-out">
+                              {item.text}
+                            </p>
                           </div>
-                          <p className="text-[15px]">{item.text}</p>
-                        </div>
+                        </Wrapper>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </div>

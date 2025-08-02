@@ -5,7 +5,7 @@ function ServiceSlide({ service }) {
   const isActive = slide?.isActive ?? false;
 
   return (
-    <div className="max-h-[471px] flex flex-col-reverse bg-white/10 text-start justify-start p-2.5 rounded-[20px] h-full transition-all duration-300 ease-in-out backdrop-blur-[10px]">
+    <div className="h-[471px] flex flex-col-reverse bg-black/50 text-start justify-start p-2.5 rounded-[20px] transition-all duration-300 ease-in-out backdrop-blur-[10px]">
       <div className="grid h-full place-items-start z-[1]">
         <div className="relative rounded-[20px] transition-all duration-300 ease-in-out h-full">
           <img

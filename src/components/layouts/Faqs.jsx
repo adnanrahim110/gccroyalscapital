@@ -97,9 +97,7 @@ const Faqs = () => {
             </div>
           </div>
           <div>
-            <Button white to="/contact-us">
-              Contact Us
-            </Button>
+            <Button to="/contact-us">Contact Us</Button>
           </div>
           <div className="mt-[60px]">
             <div className="flex flex-col">

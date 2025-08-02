@@ -32,21 +32,21 @@ const About = () => {
           <div className="inline-block mb-2.5">
             <Subtitle>Our Mission</Subtitle>
             <div className="mb-20">
-              <div className="text-[clamp(2.25rem,2.0549rem_+_0.8917vw,3.125rem)] font-medium *:mx-[7px] text-black">
+              <div className="text-[clamp(2.25rem,2.0549rem_+_0.8917vw,2.3rem)] font-medium *:mx-[7px] text-black">
                 <div className="inline">
                   Our experienced team provides tailored office
                 </div>
                 <div className="inline-block">
-                  <img src={brain} className="size-10" />
+                  <img src={brain} className="size-8" />
                 </div>
                 <div className="inline">support and</div>
                 <div className="inline text-primary">smart solutions</div>
                 <div className="inline-block">
-                  <img src={heart} className="size-10" />
+                  <img src={heart} className="size-8" />
                 </div>
                 <div className="inline">to help businesses</div>
                 <div className="inline-block">
-                  <img src={hand} className="size-10" />
+                  <img src={hand} className="size-8" />
                 </div>
                 <div className="inline">
                   operate efficiently, no matter the size or sector.
@@ -57,7 +57,7 @@ const About = () => {
               <div className="flex w-auto flex-wrap justify-center">
                 {[
                   { title: "25+", text: "Broad Career Experience" },
-                  { title: "100M +", text: "High-Earning Growth" },
+                  { title: "100M+", text: "High-Earning Growth" },
                   { title: "100+", text: "Happy Clients World wide" },
                   { title: "96%", text: "Customer Retention Rate" },
                 ].map((item, idx) => {
@@ -67,16 +67,16 @@ const About = () => {
                       className="lg:w-fit relative float-left min-h-px cursor-pointer"
                     >
                       <div
-                        className={`text-center justify-center size-[clamp(11.875rem,7.2917rem_+_9.5486vw,18.75rem)] bg-white/50 backdrop-blur-[10px] rounded-full grid place-content-center p-[clamp(0.625rem,-2.9464rem_+_5.5804vw,3.75rem)] shadow-[0_0_30px_10px] shadow-[rgba(208,208,208,0.3)] relative z-[3] will-change-transform after:size-full after:-z-[1] after:absolute after:bg-white after:inline-block after:rounded-full after:left-0 ${
+                        className={`text-center justify-center size-[clamp(11.875rem,7.2917rem_+_9.5486vw,18rem)] bg-white/50 backdrop-blur-[10px] rounded-full grid place-content-center p-[clamp(0.625rem,-2.9464rem_+_5.5804vw,3.75rem)] shadow-[0_0_30px_10px] shadow-[rgba(208,208,208,0.3)] relative z-[3] will-change-transform after:size-full after:-z-[1] after:absolute after:bg-white after:inline-block after:rounded-full after:left-0 ${
                           idx !== 0 ? "-ml-2.5" : ""
                         } bg_grd2 group`}
                       >
                         <div className="mb-3.5">
-                          <div className="text-[clamp(2.5rem,2.082rem_+_1.9108vw,4.375rem)] font-medium leading-none text-black group-hover:text-primary-500 transition-all duration-300 ease-in-out">
+                          <div className="text-[clamp(2.5rem,2.082rem_+_1.9108vw,3rem)] font-medium leading-none text-black group-hover:text-primary-500 transition-all duration-300 ease-in-out">
                             {item.title}
                           </div>
                         </div>
-                        <h5 className="text-[clamp(1rem,0.8333rem_+_0.3472vw,1.25rem)] font-normal px-5 text-black">
+                        <h5 className="text-[clamp(1rem,0.8333rem_+_0.3472vw,1rem)] font-normal px-5 text-black">
                           {item.text}
                         </h5>
                       </div>
