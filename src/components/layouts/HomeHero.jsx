@@ -20,7 +20,7 @@ const heroSlider = [
 
 const HomeHero = () => {
   return (
-    <section className="relative h-full px-0">
+    <div className="relative h-full px-0">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
@@ -64,7 +64,7 @@ const HomeHero = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </div>
   );
 };
 

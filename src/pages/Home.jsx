@@ -1,12 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import { FaApple, FaGoogle, FaStar, FaYoutube } from "react-icons/fa";
-import { hero_shade, home_sec1 } from "../assets";
+import { home_sec1 } from "../assets";
+import ContactForm from "../components/layouts/ContactForm";
+import Faqs from "../components/layouts/Faqs";
 import HomeHero from "../components/layouts/HomeHero";
+import Reviews from "../components/layouts/Reviews";
 import TextSlider from "../components/layouts/TextSlider";
 import Button from "../components/ui/Button";
 import Subtitle from "../components/ui/Subtitle";
-import { reviews } from "../constants";
 
 const Home = () => {
   return (
@@ -124,100 +125,9 @@ const Home = () => {
         </div>
       </section>
       <TextSlider />
-      <section>
-        <div className="flex flex-col grow shrink flex-wrap">
-          <div className="w-full flex justify-center items-center">
-            <div className="w-[760px] max-w-full pb-[50px] text-center">
-              <div className="*:not-last:mb-2.5">
-                <Subtitle>Testimonials</Subtitle>
-                <h2>Hear What Our CLients Say</h2>
-                <div className="px-[5%]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus dolorum doloremque.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex gap-[30px] mb-[30px]">
-            <div className="bg-white lg:w-[73%] flex pr-5 shadow-[0_0_20px] shadow-black/[0.08] rounded-[20px]">
-              <div className="p-[50px] lg:w-[44%] flex flex-col justify-center relative">
-                <div
-                  className="absolute brightness-[20%] contrast-0 saturate-0 bg-center bg-no-repeat bg-cover inset-0 opacity-10"
-                  style={{ backgroundImage: `url(${hero_shade})` }}
-                />
-                <div className="pb-[50px] *:not-last:mb-2.5">
-                  <h4>
-                    Trusted By Over <br /> 1300 Loyal Clients
-                  </h4>
-                  <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam illo dignissimos nostrum nobis accusantium quaerat,
-                    beatae nemo consequatur. Omnis, facere.
-                  </div>
-                </div>
-                <div>
-                  <Button>Contact Us</Button>
-                </div>
-              </div>
-              <div className="lg:w-[56%] flex gap-5">
-                <div className="w-1/2 grow-0 shrink basis-auto">
-                  <div className="w-full max-w-full h-[600px]">
-                    <div className="relative inline-block w-full align-top overflow-hidden">
-                      <div className="flex whitespace-nowrap text-[0px] overflow-hidden">
-                        <div className="flex items-baseline animate-marquee">
-                          {reviews.map((item, i) => (
-                            <React.Fragment key={i}>
-                              <span
-                                className={`text-[clamp(4.375rem,3.539rem_+_3.8217vw,8.125rem)] capitalize leading-[1.15] font-semibold inline-block text-black/10 p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]`}
-                              ></span>
-                            </React.Fragment>
-                          ))}
-                        </div>
-                        <div className="flex items-baseline marquee-copy">
-                          {reviews.map((item, i) => (
-                            <React.Fragment key={i}>
-                              <span
-                                className={`text-[clamp(4.375rem,3.539rem_+_3.8217vw,8.125rem)] capitalize leading-[1.15] font-semibold inline-block text-black/10 p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]`}
-                              ></span>
-                            </React.Fragment>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-1/2 grow-0 shrink basis-auto"></div>
-              </div>
-            </div>
-            <div className="w-1/4 flex flex-col gap-[30px]">
-              <div className="bg-white rounded-[20px] p-[45px] flex flex-col gap-5 justify-center text-center">
-                <span className="text-[45px] leading-none font-semibold text-black">
-                  4.80
-                </span>
-                <ul className="flex justify-center items-center gap-3">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} className="text-amber-400" />
-                  ))}
-                </ul>
-                <div className="flex flex-col text-center items-center justify-center">
-                  <p>2,548 Reviews and counting</p>
-                  <ul className="flex items-center gap-5 justify-center text-5xl">
-                    <li>
-                      <FaApple className="text-black" />
-                    </li>
-                    <li>
-                      <FaGoogle className="text-black" />
-                    </li>
-                    <li>
-                      <FaYoutube className="text-black" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Reviews />
+      <Faqs />
+      <ContactForm />
     </>
   );
 };

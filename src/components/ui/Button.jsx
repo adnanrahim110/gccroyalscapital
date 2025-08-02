@@ -10,15 +10,18 @@ const Button = ({
   to,
   small,
   primary = false,
+  white = false,
 }) => {
   const Tag = to ? Link : "button";
   return (
     <Tag
       {...(to ? { to } : { onClick: onClick, type: type, disabled: disabled })}
       className={`text-base p-[clamp(1.125rem,1.0971rem_+_0.1274vw,1.25rem)_clamp(1.5rem,1.2771rem_+_1.0191vw,2.5rem)] font-medium leading-none flex items-center text-black btn_main rounded-xl cursor-pointer bg-gradient-to-r ${
-        primary
-          ? "from-primary-300 via-primary-500 to-primary-300"
-          : "from-secondary-300 via-secondary-500 to-secondary-300"
+        white
+          ? "bg-white"
+          : primary
+          ? "from-secondary-200 via-primary-400 to-secondary-200"
+          : "from-primary-400 via-secondary-200 to-primary-400"
       }`}
     >
       <span>{children}</span>
