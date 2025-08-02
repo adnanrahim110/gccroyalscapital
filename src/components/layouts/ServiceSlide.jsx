@@ -5,7 +5,7 @@ function ServiceSlide({ service }) {
   const isActive = slide?.isActive ?? false;
 
   return (
-    <div className="h-[471px] flex flex-col-reverse bg-black/50 text-start justify-start p-2.5 rounded-[20px] transition-all duration-300 ease-in-out backdrop-blur-[10px]">
+    <div className="h-[471px] flex flex-col-reverse bg-black/50 text-start justify-start p-2.5 rounded-[20px] transition-all duration-300 ease-in-out backdrop-blur-[10px] group">
       <div className="grid h-full place-items-start z-[1]">
         <div className="relative rounded-[20px] transition-all duration-300 ease-in-out h-full">
           <img
@@ -16,7 +16,7 @@ function ServiceSlide({ service }) {
               "will-change-[height] transition-all duration-300 ease-in-out",
               isActive
                 ? "h-full"
-                : "h-[calc(100%_+_101.5555px)] -translate-y-[101.5555px]",
+                : "h-[calc(100%_+_101.5555px)] -translate-y-[101.5555px] group-hover:h-full group-hover:translate-y-0",
             ].join(" ")}
           />
         </div>
@@ -36,13 +36,15 @@ function ServiceSlide({ service }) {
               "transition-all duration-300 ease-in-out",
               isActive
                 ? "text-primary [filter:drop-shadow(0_0_18px_rgba(225,189,87,0.8))]"
-                : "text-white",
+                : "text-white group-hover:text-primary group-hover:[filter:drop-shadow(0_0_18px_rgba(225,189,87,0.8))]",
             ]}
           >
             <img
               src={service.icon}
-              className={`size-[60px] ${
-                isActive ? "" : "saturate-0 brightness-[500%]"
+              className={`size-[60px] object-contain ${
+                isActive
+                  ? ""
+                  : "saturate-0 brightness-[500%] group-hover:saturate-100 group-hover:brightness-100"
               }`}
               alt=""
             />
@@ -53,7 +55,9 @@ function ServiceSlide({ service }) {
             "mb-[clamp(1.25rem,1.0417rem_+_0.6944vw,1.875rem)] pt-[clamp(1.25rem,1.0417rem_+_0.6944vw,1.875rem)]",
             "border-t bordert-[rgba(208,208,208,0.4)] text-white/70 text-sm",
             "transition-all duration-300 ease-in-out",
-            isActive ? "translate-y-0" : "translate-y-[50px]",
+            isActive
+              ? "translate-y-0"
+              : "translate-y-[50px] group-hover:translate-y-0",
           ].join(" ")}
         >
           {service.text}
