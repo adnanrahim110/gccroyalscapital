@@ -27,34 +27,34 @@ const Reviews = ({ second = false }) => {
               <Subtitle>Testimonials</Subtitle>
               <h2>Hear What Our CLients Say</h2>
               <div className="px-[5%]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus dolorum doloremque.
+                At GRC Capital, client satisfaction is our top priority. Here's
+                what our partners say about their experience with us.
               </div>
             </div>
           </div>
         </div>
-        <div className="flex gap-[30px] mb-[30px]">
-          <div className="bg-white lg:w-[73%] flex pr-5 shadow-[0_0_20px] shadow-black/[0.08] rounded-[20px]">
-            <div className="p-[50px] lg:w-[55%] flex flex-col justify-center relative">
+        <div className="flex flex-col lg:flex-row gap-[30px] mb-[30px]">
+          <div className="bg-white lg:w-[73%] flex flex-col lg:flex-row overflow-hidden px-5 lg:pr-5 shadow-[0_0_20px] shadow-black/[0.08] rounded-[20px]">
+            <div className="p-[50px] w-full lg:w-[55%] flex flex-col justify-center relative">
               <div
-                className="absolute brightness-[20%] contrast-0 saturate-0 bg-center bg-no-repeat bg-cover inset-0 opacity-10"
+                className="absolute brightness-[20%] contrast-0 saturate-0 bg-center bg-no-repeat bg-cover inset-0 opacity-10 z-0"
                 style={{ backgroundImage: `url(${hero_shade})` }}
               />
-              <div className="pb-[50px] *:not-last:mb-2.5">
+              <div className="pb-[50px] *:not-last:mb-2.5 relative z-[1]">
                 <h4>
                   Trusted By Over <br /> 1300 Loyal Clients
                 </h4>
                 <div>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  illo dignissimos nostrum nobis accusantium quaerat, beatae
-                  nemo consequatur. Omnis, facere.
+                  From real estate developers to oil & gas innovators, our
+                  clients trust us to deliver results through insight-driven
+                  financial solutions.
                 </div>
               </div>
-              <div>
-                <Button>Contact Us</Button>
+              <div className="inline-flex cursor-pointer relative z-[1]">
+                <Button to="/contact-us">Contact Us</Button>
               </div>
             </div>
-            <div className="lg:w-[45%] flex gap-5">
+            <div className="w-full lg:w-[45%] flex gap-5">
               <div className="w-full max-h-[550px] relative">
                 <div className="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-white to-transparent z-[2]" />
                 <div className="absolute -bottom-1 left-0 w-full h-16 bg-gradient-to-t from-white to-transparent z-[2]" />
@@ -64,13 +64,16 @@ const Reviews = ({ second = false }) => {
                   autoplay={{ delay: 0 }}
                   speed={3000}
                   loop
-                  slidesPerView={2}
-                  centeredSlides={true}
+                  slidesPerView="auto"
+                  spaceBetween={0}
                   className="size-full overflow-clip! *:ease-linear! touch-pan-y!"
                 >
                   {reviews.map((review, idx) => (
-                    <SwiperSlide key={idx} className="backface-hidden!">
-                      <div className="p-[clamp(1.25rem,1.1107rem_+_0.6369vw,1.875rem)] bg-[#f3f5f4] rounded-xl">
+                    <SwiperSlide
+                      key={idx}
+                      className="backface-hidden! w-auto! h-auto!"
+                    >
+                      <div className="p-[clamp(1.25rem,1.1107rem_+_0.6369vw,1.875rem)] bg-[#f3f5f4] rounded-xl my-5">
                         <div>
                           <span className="flex text-3xl text-black mb-3.5">
                             <svg
@@ -109,7 +112,7 @@ const Reviews = ({ second = false }) => {
               </div>
             </div>
           </div>
-          <div className="w-1/4 flex flex-col gap-[30px]">
+          <div className="w-full lg:w-1/4 flex flex-col gap-[30px]">
             <div className="bg-white rounded-[20px] p-[45px] flex flex-col gap-5 justify-center text-center relative">
               <div
                 className="absolute inset-0 bg-cover bg-no-repeat bg-center opacity-15"
@@ -223,29 +226,29 @@ const Reviews = ({ second = false }) => {
             }}
           />
           <div>
-            <div className="grid lg:grid-cols-3 divide-x-2 divide-white/15 relative z-[1]">
-              <div className="text-white text-center">
+            <div className="grid max-lg:gap-10 lg:grid-cols-3 divide-y-2 lg:divide-x-2 divide-white/15 relative z-[1]">
+              <div className="text-white text-center max-lg:pb-10">
                 <div className="leading-none mb-3.5 text-[clamp(2.5rem,2.082rem_+_1.9108vw,4.375rem)] font-medium">
-                  27+
+                  25+
                 </div>
                 <div className="text-[clamp(1.125rem,1.0417rem_+_0.1736vw,1.25rem)] tracking-[0.2px] leading-[1.2]">
                   Years of Experience
                 </div>
               </div>
-              <div className="text-white text-center">
+              <div className="text-white text-center max-lg:pb-10">
                 <div className="leading-none mb-3.5 text-[clamp(2.5rem,2.082rem_+_1.9108vw,4.375rem)] font-medium">
-                  27+
+                  100+
                 </div>
                 <div className="text-[clamp(1.125rem,1.0417rem_+_0.1736vw,1.25rem)] tracking-[0.2px] leading-[1.2]">
-                  Years of Experience
+                  Happy Clients Globally
                 </div>
               </div>
-              <div className="text-white text-center">
+              <div className="text-white text-center max-lg:pb-10">
                 <div className="leading-none mb-3.5 text-[clamp(2.5rem,2.082rem_+_1.9108vw,4.375rem)] font-medium">
-                  27+
+                  100M+
                 </div>
                 <div className="text-[clamp(1.125rem,1.0417rem_+_0.1736vw,1.25rem)] tracking-[0.2px] leading-[1.2]">
-                  Years of Experience
+                  High-Earning Growth
                 </div>
               </div>
             </div>

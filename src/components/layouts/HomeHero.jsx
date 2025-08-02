@@ -57,8 +57,10 @@ const HomeHero = () => {
                     </h1>
                     <p className="pr-[10%] text-white">{item.text}</p>
                   </div>
-                  <div>
-                    <Button primary>Free Consultation</Button>
+                  <div className="inline-block">
+                    <Button primary to="/contact-us">
+                      Free Consultation
+                    </Button>
                   </div>
                 </div>
               </div>

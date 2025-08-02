@@ -12,9 +12,9 @@ const Faqs = () => {
       className="flex flex-col bg-cover bg-center bg-no-repeat rounded-t-[40px] -mt-10"
       style={{ backgroundImage: `url(${shade_4})` }}
     >
-      <div className="flex grow shrink gap-[30px] pt-20 pb-[180px]">
-        <div className="lg:w-[65%] flex flex-col gap-y-10 grow-0 shrink basis-auto">
-          <div className="*:not-last:mb-2.5 text-white">
+      <div className="flex flex-col lg:flex-row grow shrink gap-[30px] pt-20 pb-[180px]">
+        <div className="w-full lg:w-[65%] flex flex-col gap-y-10 grow-0 shrink basis-auto">
+          <div className="*:not-last:mb-2.5 text-white text-center lg:text-left">
             <Subtitle white>Our Faq</Subtitle>
             <h2 className="text-white">
               Answers To&nbsp;
@@ -24,9 +24,9 @@ const Faqs = () => {
               Questions
             </h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-              cupiditate iusto, rem eaque temporibus odio eligendi dolorum sed
-              minus rerum.
+              Get clear answers to the most common questions about our
+              structures, sectors, and timelines. If you don’t see what you
+              need, reach out and we’ll tailor a reply to your case.
             </p>
           </div>
           <div className="w-full space-y-5">
@@ -74,7 +74,7 @@ const Faqs = () => {
           </div>
         </div>
         <div
-          className="grow-0 shrink basis-auto flex flex-col items-center w-[35%] bg-center bg-cover bg-no-repeat p-[30px] pb-10 justify-center relative rounded-[30px] *:relative *:z-[1] text-center"
+          className="grow-0 shrink basis-auto flex flex-col items-center lg:w-[35%] bg-center bg-cover bg-no-repeat p-[30px] pb-10 justify-center relative rounded-[30px] *:relative *:z-[1] text-center"
           style={{ backgroundImage: `url(${faq_sec})` }}
         >
           <div className="absolute! inset-0 bg-gradient-to-r from-primary-300 to-secondary-100 opacity-90 rounded-[30px] z-0!" />
@@ -94,13 +94,14 @@ const Faqs = () => {
             <div className="mb-[50px] text-center space-y-2.5">
               <h4>Have Questions About Something?</h4>
               <div className="text-black">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet, delectus. Lorem, ipsum dolor.
+                Check our FAQs or message us for a quick, clear answer.
               </div>
             </div>
           </div>
           <div>
-            <Button white>Contact Us</Button>
+            <Button white to="/contact-us">
+              Contact Us
+            </Button>
           </div>
           <div className="mt-[60px]">
             <div className="flex flex-col">

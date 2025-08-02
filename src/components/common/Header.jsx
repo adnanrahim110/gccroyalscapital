@@ -51,7 +51,7 @@ const Header = () => {
             </div>
             <div className="lg:w-1/4 max-lg:hidden">
               <div className="flex items-center h-full justify-end">
-                <Button>Get Started</Button>
+                <Button to="/contact-us">Get Started</Button>
               </div>
             </div>
             <div className="w-[30%] lg:hidden flex justify-end items-center">

@@ -15,7 +15,7 @@ const Services = () => {
       </Helmet>
       <Hero
         title="Our Services"
-        text="lorem ipsum dolor sit amet consectetur adipisicing elit Ut, necessitatibus"
+        text="We design practical, finance-led services that drive growth, strengthen operations, and control risk. From strategy and funding to tech upgrades and process optimization, every solution is built around your goals."
       />
       <section className="bg-[#F3F5F4] -mt-10 rounded-[40px] flex">
         <div className="flex pt-[60px] pb-[120px] grow shrink basis-auto">
@@ -25,8 +25,9 @@ const Services = () => {
                 <Subtitle>Professional Guidance</Subtitle>
                 <h2>Precision Tailored Services</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem, quos.
+                  We don’t just offer services, we craft strategies. Each
+                  solution is shaped by industry insight, financial acumen, and
+                  a commitment to results.
                 </p>
               </div>
               <div className="w-full relative">

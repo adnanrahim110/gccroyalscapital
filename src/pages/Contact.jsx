@@ -14,7 +14,7 @@ const Contact = () => {
       </Helmet>
       <Hero
         title="Contact Us"
-        text="lorem ipsum dolor sit amet consectetur adipisicing elit Ut, necessitatibus"
+        text="We’d love to hear from you. Reach out with your questions or project ideas we’ll respond promptly."
       />
       <section className="bg-[#F3F5F4] -mt-10 rounded-t-[40px]">
         <div className="flex grow shrink pb-[120px] pt-[60px]">
@@ -25,9 +25,9 @@ const Contact = () => {
                   <Subtitle>Let's Start Talking</Subtitle>
                   <h2>Send Us Your Query</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt quaerat reiciendis unde omnis, temporibus quae nesciunt
-                    eaque vitae deleniti
+                    Whether you're exploring partnership opportunities, seeking
+                    investment advice, or require a tailored financial strategy,
+                    our team is here to help.
                   </p>
                 </div>
               </div>

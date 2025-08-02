@@ -1,8 +1,8 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6"
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, FaXTwitter } from "react-icons/fa6"
 import { GrLocation } from "react-icons/gr"
 import { HiPhone } from "react-icons/hi"
 import { IoMail } from "react-icons/io5"
-import { s1, s2, s3, s4, s5 } from "../assets"
+import { reviews_m1, reviews_m2, reviews_m3, reviews_w1, reviews_w2, s1, s2, s3, s4, s5 } from "../assets"
 
 export const navigation = [
   {
@@ -26,20 +26,20 @@ export const navigation = [
 export const contactDetails = [
   {
     title: "talk to us",
-    url: "tel:+000-123456789",
-    text: "+000-123456789",
-    icon: HiPhone
+    url: "https://wa.me/+971527477786?text=Hello%20GRC%20Capital",
+    text: "WhatsApp",
+    icon: FaWhatsapp
   },
   {
     title: "Email",
-    url: "mailto:info@example.com",
-    text: "info@example.com",
+    url: "mailto: info@grccapitals.com",
+    text: " info@grccapitals.com",
     icon: IoMail
   },
   {
     title: "Our Location",
     url: false,
-    text: "456 Main Street, New York, NY 10001",
+    text: "DUbai, United Arab Emirates",
     icon: GrLocation
   }
 ]
@@ -70,89 +70,91 @@ export const socialDetails = [
 export const services = [
   {
     title: "Growth Strategy",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus.",
+    text: "Drive expansion through intelligent planning, sector insights, and risk-aligned funding models.",
     img: s1,
   },
   {
     title: "Technology Upgrade",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus.",
+    text: "Enable operational transformation through digital investments and scalable financial tools.",
     img: s2,
   },
   {
     title: "Finance Advisory",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus.",
+    text: "From capital structuring to regulatory alignment, our team offers actionable, expert financial advice.",
     img: s3,
   },
   {
     title: "Risk Planning",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus.",
+    text: "Safeguard your investments with proactive risk identification, analysis, and mitigation frameworks.",
     img: s4,
   },
   {
     title: "Process Management",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus.",
+    text: "Enhance business performance through financial process optimization and strategic resource planning.",
     img: s5,
   },
-]
+];
+
 
 export const reviews = [
   {
-    name: "John Doe",
-    title: "CEO",
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
-    img: "",
+    name: "Mikell Harper",
+    title: "Managing Director, Real Estate",
+    comment:
+      "GRC translated a complex multi party deal into clear structure, managed counterparty risk, and kept cash flow central. Their expertise in Real Estate and Oil & Gas saved time and delivered exactly what our team needed.",
+    img: reviews_m1,
   },
   {
-    name: "John Doe",
-    title: "CEO",
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
-    img: "",
+    name: "Ayesha Khan",
+    title: "Head of Trade Finance",
+    comment:
+      "We approached GRC for structured trade finance and got thoughtful instruments aligned to our risks. From LC wording to collateral, they navigated banking partners smoothly. The result was secure execution, cycles, and confidence to scale initiative.",
+    img: reviews_w1,
   },
   {
-    name: "John Doe",
-    title: "CEO",
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
-    img: "",
+    name: "Daniel Reed",
+    title: "CFO, Growth-Stage Company",
+    comment:
+      "As a growth stage firm, we needed help, not generic promises. GRC scoped the work, set milestones, and delivered funding within the 30 to 90 day window. Communication was crisp, and risk issues were addressed early.",
+    img: reviews_m2,
   },
   {
-    name: "John Doe",
-    title: "CEO",
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
-    img: "",
+    name: "Sara Malik",
+    title: "Program Lead, Digital Infrastructure",
+    comment:
+      "GRC brought partnership to a Digital Infrastructure and Real Estate program. They listened, mapped the cash drivers, and structured around them. The financing fit our operations, reduced noise with lenders, and positioned us to execute smoothly.",
+    img: reviews_w2,
   },
   {
-    name: "John Doe",
-    title: "CEO",
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
-    img: "",
+    name: "Robert James",
+    title: "Executive Chairman",
+    comment:
+      "What stood out was GRC’s client first mindset paired with risk control. They tailored the structure to our constraints, stress tested assumptions, and stayed pragmatic. The outcome was bankable, defensible, and aligned with how we operate.",
+    img: reviews_m3,
   },
-  {
-    name: "John Doe",
-    title: "CEO",
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, necessitatibus. Lorem ipsum dolor sit amet.",
-    img: "",
-  },
-]
+];
+
 
 export const faqs = [
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    answer: "Cursus mi pretium tellus duis convallis tempus leo. Pulvinar vivamus fringilla lacus nec posuere ut hendrerit metus semper vel class bibendum egestas.",
+    question: "What industries do you serve?",
+    answer:
+      "We work across Real Estate, Development, Renewable Energy, Digital Infrastructure, and Oil & Gas.",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    answer: "Cursus mi pretium tellus duis convallis tempus leo. Pulvinar vivamus fringilla lacus nec posuere ut hendrerit metus semper vel class bibendum egestas.",
+    question: "How does GRC structure trade finance deals?",
+    answer:
+      "We tailor each instrument (LC, SBLC, BG, etc.) to the specific risks and needs of the transaction, ensuring compliance and security.",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    answer: "Cursus mi pretium tellus duis convallis tempus leo. Pulvinar vivamus fringilla lacus nec posuere ut hendrerit metus semper vel class bibendum egestas.",
+    question: "Do you only work with large-scale clients?",
+    answer:
+      "No. We support mid-size and growth-stage firms with viable projects and strong fundamentals.",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    answer: "Cursus mi pretium tellus duis convallis tempus leo. Pulvinar vivamus fringilla lacus nec posuere ut hendrerit metus semper vel class bibendum egestas.",
+    question: "What’s your typical project turnaround time?",
+    answer:
+      "Depending on complexity, our financial structuring and funding processes typically range between 30 to 90 days.",
   },
-  {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-    answer: "Cursus mi pretium tellus duis convallis tempus leo. Pulvinar vivamus fringilla lacus nec posuere ut hendrerit metus semper vel class bibendum egestas.",
-  },
-]
+];
+

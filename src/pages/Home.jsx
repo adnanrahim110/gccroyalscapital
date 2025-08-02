@@ -16,29 +16,35 @@ const Home = () => {
         <title>Home - GCC Royals Capital</title>
       </Helmet>
       <HomeHero />
-      <section className="bg-[#F3F5F4] rounded-t-[60px] -mt-[60px]">
+      <section className="bg-[#F3F5F4] lg:rounded-t-[60px] -mt-[60px]">
         <div className="pt-[100px] pb-[70px]">
           <div className="flex flex-col gap-[60px]">
             <div className="[flex:0_0_calc(72%_-_calc(60px_/_2))] relative">
               <div className="w-full h-fit relative">
                 <div className="w-full">
-                  <div className="flex gap-[60px]">
+                  <div className="flex flex-col lg:flex-row gap-[60px]">
                     <div
-                      className="bg-center bg-cover w-1/2 rounded-[30px] h-[500px] grow-0 shrink basis-auto"
+                      className="bg-center bg-cover lg:w-1/2 rounded-[30px] h-[500px] grow-0 shrink basis-auto"
                       style={{ backgroundImage: `url(${home_sec1})` }}
                     />
-                    <div className="w-1/2 flex flex-col grow-0 shrink basis-auto gap-y-[50px] py-20">
+                    <div className="lg:w-1/2 flex flex-col grow-0 shrink basis-auto gap-y-[50px] pb-20">
                       <div className="*:mb-2.5">
-                        <Subtitle>Guidance, Trust, Results.</Subtitle>
-                        <h2>Lorem ipsum dolor sit ametad consectetur.</h2>
-                        <p className="pr-[15%]">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Obcaecati sit omnis earum quaerat saepe est
-                          veniam alias voluptates in laudantium!
+                        <Subtitle>Cash Flow First</Subtitle>
+                        <h2>GRC Capital: Creative Finance, Controlled Risk</h2>
+                        <p className="lg:pr-[15%]">
+                          At GRC Capital, we specialize in providing innovative
+                          and strategic financial solutions. Our approach
+                          combines creativity with structured risk management to
+                          deliver tailored solutions that empower businesses to
+                          thrive in Oil & Gas, Real Estate, Development,
+                          Trading, and other dynamic sectors. Through strategic
+                          partnerships, deep industry expertise, and an
+                          unwavering focus on cash flow generation, we unlock
+                          value for our clients while mitigating risk.
                         </p>
                       </div>
-                      <div>
-                        <Button>Get Started</Button>
+                      <div className="inline-flex">
+                        <Button to="/about-us">Learn More</Button>
                       </div>
                     </div>
                   </div>
@@ -46,23 +52,23 @@ const Home = () => {
               </div>
             </div>
             <div className="[flex:0_0_calc(28%_calc(60px_/_2))]">
-              <ul className="justify-start flex gap-[50px]">
+              <ul className="justify-start flex flex-col lg:flex-row gap-14 lg:gap-[20px]">
                 {[
                   {
-                    title: "reliability",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, odio debitis.",
+                    title: "Creative Solutions",
+                    text: "We specialize in developing innovative financial solutions tailored to your unique needs, allowing you to overcome challenges and seize opportunities.",
                   },
                   {
-                    title: "customer Care",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, odio debitis.",
+                    title: "Industry Expertise",
+                    text: "With extensive experience in Development, Real Estate, Trading, Oil & Gas, and other sectors, we provide solutions grounded in deep market knowledge and strong industry connections.",
                   },
                   {
-                    title: "Business Continuity",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, odio debitis.",
+                    title: "Risk Control",
+                    text: "We prioritize risk management in every financial solution, ensuring that your investments are secure and strategically positioned for long-term success.",
                   },
                   {
-                    title: "Experience",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, odio debitis.",
+                    title: "Tailored Strategies",
+                    text: "At GRC Capital, we don’t believe in one-size-fits-all solutions. Each financial strategy is customized to meet the specific requirements of our clients, enabling them to achieve their goals with confidence.",
                   },
                 ].map((item, idx) => (
                   <li
@@ -112,10 +118,10 @@ const Home = () => {
                           </i>
                         </span>
                       </div>
-                      <h4 className="text-[clamp(1.5rem,1.4164rem_+_0.3822vw,1.875rem)]">
+                      <h4 className="text-[clamp(1.5rem,1.4164rem_+_0.3822vw,1.5rem)]">
                         {item.title}
                       </h4>
-                      <div className="mt-5 text-wrap">{item.text}</div>
+                      <div className="mt-5 text-sm text-wrap">{item.text}</div>
                     </div>
                   </li>
                 ))}

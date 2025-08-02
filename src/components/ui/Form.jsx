@@ -4,7 +4,7 @@ import Button from "./Button";
 const Form = () => {
   return (
     <form>
-      <div className="grid grid-cols-2 gap-[22px] mb-[22px]">
+      <div className="grid md:grid-cols-2 gap-[22px] mb-[22px]">
         <input type="text" name="fname" placeholder="First Name*" />
         <input type="text" name="lname" placeholder="Last Name*" />
         <input type="email" name="email" placeholder="Email Address*" />

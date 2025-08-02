@@ -131,12 +131,11 @@
 
   section,
   footer {
-    @apply px-[30px] relative z-[1]
+    @apply px-5 lg:px-[30px] relative z-[1]
   }
 
   section>div, footer>div {
-    max-width: min(100%, 1100px);
-    @apply lg:w-full mx-auto relative z-[1];
+    @apply lg:w-full mx-auto max-lg:max-w-[980px] max-[1280px]:max-w-[1100px] min-[1320px]:max-w-[1300px] relative z-[1];
   }
 
   svg {

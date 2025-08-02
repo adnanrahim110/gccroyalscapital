@@ -25,7 +25,7 @@ const About = () => {
       </Helmet>
       <Hero
         title="About Us"
-        text="lorem ipsum dolor sit amet consectetur adipisicing elit Ut, necessitatibus Lorem ipsum dolor sit amet consectetur adipisicing elit Ut, necessitatibus"
+        text="We structure financing that turns strategy into cash flow, with smart execution and measured risk. Backed by deep expertise in Real Estate, Development, Oil & Gas, Renewable Energy, and Digital Infrastructure."
       />
       <section className="pt-[120px] rounded-t-[60px] -mt-[60px] bg-[#F3F5F4] mb-[160px]">
         <div className="flex flex-col text-center">
@@ -48,15 +48,17 @@ const About = () => {
                 <div className="inline-block">
                   <img src={hand} className="size-10" />
                 </div>
-                <div className="inline">operate efficiently</div>
+                <div className="inline">
+                  operate efficiently, no matter the size or sector.
+                </div>
               </div>
             </div>
             <div className="relative">
               <div className="flex w-auto flex-wrap justify-center">
                 {[
-                  { title: "16 +", text: "Broad Career Experience" },
-                  { title: "22k +", text: "High-Earning Growth" },
-                  { title: "15k", text: "Happy Clients World wide" },
+                  { title: "25+", text: "Broad Career Experience" },
+                  { title: "100M +", text: "High-Earning Growth" },
+                  { title: "100+", text: "Happy Clients World wide" },
                   { title: "96%", text: "Customer Retention Rate" },
                 ].map((item, idx) => {
                   return (
@@ -93,10 +95,8 @@ const About = () => {
         <div className="grow shrink flex pt-20 pb-[120px]">
           <div className="flex flex-col w-full gap-y-[60px]">
             <div className="max-w-full w-[525px] space-y-2.5">
-              <Subtitle white>Our Features</Subtitle>
-              <h2 className="text-white">
-                Lorem ipsum dolor sit amet consectetur
-              </h2>
+              <Subtitle white>Our Core Strengths</Subtitle>
+              <h2 className="text-white">Excellence Through Expertise</h2>
             </div>
             <div className="grid grid-cols-[520px_auto] gap-[30px] 2xl:gap-[50px]">
               <div>
@@ -110,22 +110,22 @@ const About = () => {
                 {[
                   {
                     title: "Expert Skills.",
-                    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod",
+                    text: "Our team brings decades of experience in structured finance, project evaluation, and deal execution across global markets.",
                     img: skill,
                   },
                   {
                     title: "Our Process.",
-                    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod",
+                    text: "We follow a disciplined yet flexible approach — combining financial modeling, industry insights, and risk analytics.",
                     img: process,
                   },
                   {
                     title: "Main Focus.",
-                    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod",
+                    text: "Maximizing returns while minimizing exposure — that's our promise, no matter how complex the deal.",
                     img: focus,
                   },
                   {
                     title: "Our Network.",
-                    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod",
+                    text: "Strategic partnerships with global institutions, lenders, and investors ensure robust capital flows and secure transactions.",
                     img: network,
                   },
                 ].map((item, idx) => (

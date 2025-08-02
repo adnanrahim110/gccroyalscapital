@@ -12,14 +12,14 @@ const Footer = () => {
     >
       <span className="absolute inset-0 block bg-[#161616] rounded-t-[40px] opacity-70" />
       <div className="pt-20 flex flex-col">
-        <div className="flex gap-[30px] pb-[90px] border-b border-b-[#D0D0D033]">
+        <div className="flex flex-col lg:flex-row gap-[30px] pb-[90px] border-b border-b-[#D0D0D033]">
           <div className="lg:w-[35%] pr-10 flex flex-col gap-[25px] text-white">
             <div>
               <img src={logo3} className="max-h-[55px] w-auto -ml-4" alt="" />
             </div>
             <p className="pb-6 pr-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-              tempora esse.
+              Delivering insight-driven financial solutions backed by expertise,
+              strategy, and global reach.
             </p>
             <h5 className="text-white tracking-[0.2px]">Stay Tuned</h5>
             <div>
@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="lg:w-[65%] flex flex-col">
-            <div className="flex w-full gap-[30px] border-b border-b-[#D0D0D033] pb-[60px]">
+            <div className="flex flex-col lg:flex-row w-full gap-[30px] border-b border-b-[#D0D0D033] pb-[60px]">
               <div className="max-w-full w-[300px]">
                 <h4 className="text-white">Register For Our Updates!</h4>
               </div>
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-[30px] pt-12">
               <h5 className="text-white">Quick Links</h5>
-              <ul className="flex items-center gap-8">
+              <ul className="flex items-center gap-5 lg:gap-8">
                 {navigation.map((nav, idx) => (
                   <li key={idx}>
                     <Link
@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
         <div className="w-full flex justify-between py-[30px] text-white">
           <p>© {new Date().getFullYear()} GCC Capitals. All Rights Reserved</p>
-          <ul className="flex flex-wrap -mx-[25px]">
+          {/* <ul className="flex flex-wrap -mx-[25px]">
             <li className="mx-[25px] relative [work-break:break-word] flex after:absolute after:h-3/5 after:border-l after:border-l-[#ddd] after:top-1/2 after:-translate-y-1/2 after:-right-[25px]">
               <Link className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out">
                 Privacy Policy
@@ -97,7 +97,7 @@ const Footer = () => {
                 Terms & Conditions
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </footer>

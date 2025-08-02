@@ -22,7 +22,11 @@ const TextSlider = () => {
                     {text}
                   </span>
                   <span className="flex h-auto text-center relative p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]">
-                    <img src={fav} className="w-[100px] max-w-[100px]" alt="" />
+                    <img
+                      src={fav}
+                      className="w-[100px] max-w-[100px] grayscale"
+                      alt=""
+                    />
                   </span>
                 </React.Fragment>
               ))}
