@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - GCC Royals Capital</title>
+        <title>Contact Us - GRC Capitals</title>
       </Helmet>
       <Hero
         title="Contact Us"

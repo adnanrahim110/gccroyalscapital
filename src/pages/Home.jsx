@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Home - GCC Royals Capital</title>
+        <title>Home - GRC Capitals</title>
       </Helmet>
       <HomeHero />
       <section className="bg-[#F3F5F4] lg:rounded-t-[60px] -mt-[60px]">

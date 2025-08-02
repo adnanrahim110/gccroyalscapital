@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Services - GCC Royals Capital</title>
+        <title>Services - GRC Capitals</title>
       </Helmet>
       <Hero
         title="Our Services"

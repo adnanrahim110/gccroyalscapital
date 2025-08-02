@@ -15,7 +15,7 @@ const Header = () => {
               <Link to="/" className="flex items-center size-full">
                 <img
                   src={logo3}
-                  alt="GCC Royals Capital"
+                  alt="GRC Capitals"
                   className="max-w-[120px] lg:max-w-[150px]"
                 />
               </Link>

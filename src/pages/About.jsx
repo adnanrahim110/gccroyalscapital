@@ -21,7 +21,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - GCC Royals Capital</title>
+        <title>About Us - GRC Capitals</title>
       </Helmet>
       <Hero
         title="About Us"
