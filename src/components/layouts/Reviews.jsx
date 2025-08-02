@@ -251,6 +251,15 @@ const Reviews = ({ second = false }) => {
                   High-Earning Growth
                 </div>
               </div>
+              <div className="text-white text-center max-lg:pb-10">
+                <div className="leading-none mb-3.5 text-[clamp(2.5rem,2.082rem_+_1.9108vw,4.375rem)] font-medium">
+                  96%
+                </div>
+                +
+                <div className="text-[clamp(1.125rem,1.0417rem_+_0.1736vw,1.25rem)] tracking-[0.2px] leading-[1.2]">
+                  Customer Retention Rate
+                </div>
+              </div>
             </div>
           </div>
         </div>

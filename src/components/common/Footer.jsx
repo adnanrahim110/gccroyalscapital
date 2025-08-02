@@ -84,7 +84,7 @@ const Footer = () => {
                       to="/"
                       className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
                     >
-                      TTerms & Conditions
+                      Terms & Conditions
                     </Link>
                   </li>
                   <li>

@@ -29,18 +29,14 @@ const Header = () => {
                   >
                     <Link
                       to={item.url}
-                      className={`inline-block p-[33px_22px] align-middle relative capitalize ${
-                        location.pathname === item.url
-                          ? "text-secondary"
-                          : "text-white hover:text-secondary"
-                      } transition-all duration-300 ease-linear`}
+                      className={`inline-block p-[33px_22px] align-middle relative capitalize text-white hover:text-secondary-200 transition-all duration-300 ease-linear`}
                     >
                       <span
                         className={`before:absolute before:size-[7px] before:top-0 before:bottom-0 before:left-2 before:right-auto before:m-auto before:rounded-full ${
                           location.pathname === item.url
                             ? "before:translate-x-0 before:opacity-100"
                             : "before:opacity-0 before:-translate-x-1"
-                        } before:bg-secondary before:transition before:duration-200 before:ease-[cubic-bezier(0.7,0,0.3,1)]`}
+                        } before:bg-white before:transition before:duration-200 before:ease-[cubic-bezier(0.7,0,0.3,1)]`}
                       >
                         {item.title}
                       </span>
@@ -51,7 +47,7 @@ const Header = () => {
             </div>
             <div className="lg:w-1/4 max-lg:hidden">
               <div className="flex items-center h-full justify-end">
-                <Button to="/contact-us">Get Started</Button>
+                <Button to="/services">Get Started</Button>
               </div>
             </div>
             <div className="w-[30%] lg:hidden flex justify-end items-center">
