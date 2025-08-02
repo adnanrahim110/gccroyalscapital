@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Company from "../svgs/company";
+import Company from "../svgs/Company";
 import Company2 from "../svgs/Company2";
 import Company3 from "../svgs/Company3";
 import Finance from "../svgs/finance";
