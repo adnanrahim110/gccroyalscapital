@@ -226,7 +226,7 @@ const Reviews = ({ second = false }) => {
             }}
           />
           <div>
-            <div className="grid max-lg:gap-10 lg:grid-cols-3 divide-y-2 lg:divide-x-2 divide-white/15 relative z-[1]">
+            <div className="grid max-lg:gap-10 lg:grid-cols-3 max-lg:divide-y-2 lg:divide-x-2 divide-white/15 relative z-[1]">
               <div className="text-white text-center max-lg:pb-10">
                 <div className="leading-none mb-3.5 text-[clamp(2.5rem,2.082rem_+_1.9108vw,4.375rem)] font-medium">
                   25+
