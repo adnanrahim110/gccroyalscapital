@@ -70,13 +70,29 @@ const Footer = () => {
             <div className="flex flex-col lg:flex-row gap-5">
               <div className="lg:w-1/3 grow-0 shrink basis-auto flex flex-col gap-[30px] pt-12">
                 <h5 className="text-white">Support Pages</h5>
-                <ul className="flex gap-4 flex-col">
+                <ul className="flex gap-2 flex-col">
                   <li>
                     <Link
                       to="/about-us"
                       className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
                     >
                       About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Live Chat
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Trading Guide
                     </Link>
                   </li>
                   <li>
@@ -107,7 +123,7 @@ const Footer = () => {
               </div>
               <div className="lg:w-1/3 grow-0 shrink basis-auto flex flex-col gap-[30px] pt-12">
                 <h5 className="text-white">About</h5>
-                <ul className="flex gap-4 flex-col">
+                <ul className="flex gap-2 flex-col">
                   <li>
                     <Link
                       to="/about-us"
@@ -121,7 +137,23 @@ const Footer = () => {
                       to="/about-us"
                       className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
                     >
+                      Our Team
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/about-us"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
                       Portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Career
                     </Link>
                   </li>
                   <li>
@@ -144,13 +176,21 @@ const Footer = () => {
               </div>
               <div className="lg:w-1/3 grow-0 shrink basis-auto flex flex-col gap-[30px] pt-12">
                 <h5 className="text-white">Quick Links</h5>
-                <ul className="flex gap-4 flex-col">
+                <ul className="flex gap-2 flex-col">
                   <li>
                     <Link
                       to="/"
                       className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
                     >
-                      Home
+                      FAQ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Pricing Plan
                     </Link>
                   </li>
                   <li>
@@ -166,7 +206,7 @@ const Footer = () => {
                       to="/"
                       className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
                     >
-                      FAQ
+                      Market Overview
                     </Link>
                   </li>
                   <li>
@@ -174,7 +214,15 @@ const Footer = () => {
                       to="/"
                       className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
                     >
-                      Market Overview
+                      Deposit & Withdrawals
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-white underline underline-offset-4 decoration-transparent hover:decoration-white transition-all duration-300 ease-in-out"
+                    >
+                      Account Login
                     </Link>
                   </li>
                 </ul>
