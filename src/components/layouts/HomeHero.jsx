@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import React from "react";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -48,20 +49,37 @@ const HomeHero = () => {
                 <div className="lg:w-[50%] py-[100px] flex-col max-lg:flex-wrap">
                   <div className="pb-[50px] *:not-last:mb-2.5">
                     <Subtitle white>{item.subtitle}</Subtitle>
-                    <h1 className="text-white leading-[1.1]">
+                    <motion.h1
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8 }}
+                      className="text-white leading-[1.1]"
+                    >
                       Creative Risk <br className="hidden xl:block" /> &{" "}
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary-200">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-200">
                         Finance
                       </span>{" "}
                       Solutions
-                    </h1>
-                    <p className="pr-[10%] text-white">{item.text}</p>
+                    </motion.h1>
+                    <motion.p
+                      initial={{ opacity: 0, y: 50 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8, delay: 0.2 }}
+                      className="pr-[10%] text-white"
+                    >
+                      {item.text}
+                    </motion.p>
                   </div>
-                  <div className="inline-block">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    className="inline-block"
+                  >
                     <Button primary to="/contact-us">
                       Free Consultation
                     </Button>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>

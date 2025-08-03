@@ -11,7 +11,7 @@ const SwiperBtn = ({ direction, onClick, w_h, bg, white = false }) => {
     <div
       className={`absolute ${w_h || "lg:w-14 lg:h-14"} ${
         bg ||
-        "bg-transparent hover:bg-gradient-to-r from-primary-400 to-secondary-200"
+        "bg-transparent hover:bg-gradient-to-r from-primary-400 to-primary-200"
       } border-1 ${
         white
           ? "border-white text-white hover:text-black"

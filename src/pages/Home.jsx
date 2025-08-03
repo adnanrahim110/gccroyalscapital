@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { home_sec1 } from "../assets";
@@ -9,6 +10,7 @@ import ServiceSec from "../components/layouts/ServiceSec";
 import TextSlider from "../components/layouts/TextSlider";
 import Button from "../components/ui/Button";
 import Subtitle from "../components/ui/Subtitle";
+import { MotionInView, variants, viewportOnce20 } from "../utils/motion";
 
 const Home = () => {
   return (
@@ -17,7 +19,12 @@ const Home = () => {
         <title>Home - GRC Capitals</title>
       </Helmet>
       <HomeHero />
-      <section className="bg-[#F3F5F4] lg:rounded-t-[60px] -mt-[60px]">
+      <MotionInView
+        as={motion.section}
+        v={variants.slideUp}
+        viewport={viewportOnce20}
+        className="bg-[#F3F5F4] lg:rounded-t-[60px] -mt-[60px]"
+      >
         <div className="pt-[100px] pb-[70px]">
           <div className="flex flex-col gap-[60px]">
             <div className="[flex:0_0_calc(72%_-_calc(60px_/_2))] relative">
@@ -76,7 +83,7 @@ const Home = () => {
                 ].map((item, idx) => (
                   <li
                     key={idx}
-                    className="leading-normal cursor-pointer transition-all duration-300 ease-in-out opacity-30 hover:opacity-100 group"
+                    className="leading-normal cursor-pointer transition-all duration-300 ease-in-out opacity-70 hover:opacity-100 group"
                   >
                     <div className="flex flex-col">
                       <div className="pb-5 mb-5 border-b border-[#d0d0d0] relative before:w-0 before:absolute before:h-px before:bg-black before:left-0 before:top-auto before:-bottom-px before:m-auto before:transition-all before:duration-300 before:ease-in-out group-hover:before:w-full">
@@ -132,7 +139,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </MotionInView>
       <TextSlider />
       <ServiceSec second />
       <Reviews second />

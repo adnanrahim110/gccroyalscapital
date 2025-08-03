@@ -47,8 +47,8 @@ function ServiceSlide({ service, dark = false }) {
               src={service.icon}
               className={`size-[60px] object-contain ${
                 isActive
-                  ? ""
-                  : "saturate-0 brightness-[500%] group-hover:saturate-100 group-hover:brightness-100"
+                  ? "hue-rotate-[265deg]"
+                  : "saturate-0 brightness-[500%] group-hover:saturate-100 group-hover:brightness-100 group-hover:hue-rotate-[265deg]"
               }`}
               alt=""
             />

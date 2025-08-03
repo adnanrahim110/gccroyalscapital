@@ -8,6 +8,7 @@ export { default as fav } from './images/fav.png';
 export { default as focus } from './images/focus.png';
 export { default as hand } from './images/hand.png';
 export { default as heart } from './images/heart.png';
+export { default as hero3 } from './images/hero3.png';
 export { default as hero_shade } from './images/hero_shade.png';
 export { default as hero_shade2 } from './images/hero_shade2.jpg';
 export { default as home_sec1 } from './images/home_sec1.jpg';

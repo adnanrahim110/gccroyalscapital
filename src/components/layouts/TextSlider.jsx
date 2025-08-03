@@ -17,14 +17,16 @@ const TextSlider = () => {
               {textSliderData.map((text, i) => (
                 <React.Fragment key={i}>
                   <span
-                    className={`text-[clamp(4.375rem,3.539rem_+_3.8217vw,8.125rem)] capitalize leading-[1.15] font-semibold inline-block text-black/10 hover:text-primary-500 transition-colors duration-300 ease-linear p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]`}
+                    className={`text-[clamp(4.375rem,3.539rem_+_3.8217vw,8.125rem)] font-sans capitalize leading-[1.3] font-semibold inline-block ${
+                      i % 2 === 0 ? "text-primary" : "text_stroke"
+                    } transition-colors duration-300 ease-linear p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]`}
                   >
                     {text}
                   </span>
                   <span className="flex h-auto text-center relative p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]">
                     <img
                       src={logo3}
-                      className="w-[250px] max-w-[250px] grayscale hover:grayscale-0 transition-all duration-200 ease-in-out cursor-pointer"
+                      className="w-[250px] max-w-[250px] transition-all duration-200 ease-in-out cursor-pointer"
                       alt=""
                     />
                   </span>
@@ -35,7 +37,9 @@ const TextSlider = () => {
               {textSliderData.map((text, i) => (
                 <React.Fragment key={i}>
                   <span
-                    className={`text-[clamp(4.375rem,3.539rem_+_3.8217vw,8.125rem)] capitalize leading-[1.15] font-semibold inline-block text-black/10 p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]`}
+                    className={`text-[clamp(4.375rem,3.539rem_+_3.8217vw,8.125rem)] font-sans capitalize leading-[1.3] font-semibold inline-block ${
+                      i % 2 !== 0 ? "text-primary" : "text_stroke"
+                    } transition-colors duration-300 ease-linear p-[0_clamp(1.875rem,1.5963rem_+_1.2739vw,3.125rem)]`}
                   >
                     {text}
                   </span>

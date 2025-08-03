@@ -75,7 +75,7 @@ const Faqs = () => {
           className="grow-0 shrink basis-auto flex flex-col items-center lg:w-[35%] bg-center bg-cover bg-no-repeat p-[30px] pb-10 justify-center relative rounded-[30px] *:relative *:z-[1] text-center"
           style={{ backgroundImage: `url(${faq_sec})` }}
         >
-          <div className="absolute! inset-0 bg-gradient-to-r from-primary-300 to-secondary-100 opacity-90 rounded-[30px] z-0!" />
+          <div className="absolute! inset-0 bg-gradient-to-r from-primary-300 to-primary-50 opacity-90 rounded-[30px] z-0!" />
           <div className="text-center">
             <div className="text-black text-[100px] inline-block leading-none text-center">
               <svg

@@ -17,11 +17,7 @@ const Button = ({
     <Tag
       {...(to ? { to } : { onClick: onClick, type: type, disabled: disabled })}
       className={`text-base p-[clamp(1.125rem,1.0971rem_+_0.1274vw,1.25rem)_clamp(1.5rem,1.2771rem_+_1.0191vw,2.5rem)] font-medium leading-none flex items-center text-black btn_main rounded-xl cursor-pointer bg-gradient-to-r ${
-        white
-          ? "bg-white"
-          : primary
-          ? "from-secondary-200 via-primary-400 to-secondary-200"
-          : "from-primary-400 via-secondary-200 to-primary-400"
+        white ? "bg-white" : "from-primary-200 via-primary-400 to-primary-200"
       }`}
     >
       <span>{children}</span>

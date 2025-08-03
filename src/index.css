@@ -2,31 +2,18 @@
 
 @theme {
 
-  --color-primary: #088d41;
-  --color-primary-50: #eefff4;
-  --color-primary-100: #d8ffe8;
-  --color-primary-200: #b4fed2;
-  --color-primary-300: #79fcaf;
-  --color-primary-400: #38f084;
-  --color-primary-500: #0ed963;
-  --color-primary-600: #05b44e;
-  --color-primary-700: #088d41;
-  --color-primary-800: #0c6f37;
-  --color-primary-900: #0c5b2f;
-  --color-primary-950: #004922;
-
-  --color-secondary: #ddae42;
-  --color-secondary-50: #fcf9ee;
-  --color-secondary-100: #f6edcf;
-  --color-secondary-200: #edda9a;
-  --color-secondary-300: #e1bd57;
-  --color-secondary-400: #ddae42;
-  --color-secondary-500: #d4922c;
-  --color-secondary-600: #bc7123;
-  --color-secondary-700: #9c5321;
-  --color-secondary-800: #804120;
-  --color-secondary-900: #69371e;
-  --color-secondary-950: #3c1c0c;
+  --color-primary: #ddae42;
+  --color-primary-50: #fcf9ee;
+  --color-primary-100: #f6edcf;
+  --color-primary-200: #edda9a;
+  --color-primary-300: #e1bd57;
+  --color-primary-400: #ddae42;
+  --color-primary-500: #d4922c;
+  --color-primary-600: #bc7123;
+  --color-primary-700: #9c5321;
+  --color-primary-800: #804120;
+  --color-primary-900: #69371e;
+  --color-primary-950: #3c1c0c;
 
   --animate-zoomEffect: zoomEffect 3s ease-in-out infinite alternate;
 
@@ -229,6 +216,12 @@
     }
   }
 
+  .text_stroke {
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke: 1px var(--color-primary);
+  }
+
   .btn_icn {
     transition: 375ms cubic-bezier(0.7, 0, 0.3, 1);
   }
@@ -270,7 +263,7 @@
   }
 
   .bg-grad {
-    background-image: linear-gradient(90deg, var(--color-primary-400), var(--color-secondary-200), rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
+    background-image: linear-gradient(90deg, var(--color-primary-400), var(--color-primary-200), rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
     background-size: 300% 100%;
     background-position: right;
     background-repeat: no-repeat;
@@ -285,7 +278,7 @@
     right: -3px;
     bottom: -3px;
     border-radius: inherit;
-    background: linear-gradient(25deg, var(--color-primary-400) 54%, var(--color-secondary-200), transparent);
+    background: linear-gradient(25deg, var(--color-primary-400) 54%, var(--color-primary-200), transparent);
     animation: rotate 3s infinite linear;
     box-shadow: 0 0 80px 1px rgba(var(--wdtTertiaryColorRgb), 0.3);
     -webkit-box-shadow: 0 0 80px 1px rgba(var(--wdtTertiaryColorRgb), 0.3);
@@ -296,7 +289,7 @@
   }
 
   .bg_grad3 {
-    background: linear-gradient(90deg, var(--color-primary-400), var(--color-secondary-200), transparent, transparent);
+    background: linear-gradient(90deg, var(--color-primary-400), var(--color-primary-200), transparent, transparent);
     background-size: 300% 100%;
     background-repeat: no-repeat;
     background-position: center right;
@@ -313,7 +306,7 @@
     @apply relative;
 
     &::before {
-      background-image: linear-gradient(90deg, var(--color-primary-400), var(--color-secondary-200), #fff, #fff);
+      background-image: linear-gradient(90deg, var(--color-primary-400), var(--color-primary-200), #fff, #fff);
       background-size: 300% 100%;
       background-position: bottom right;
       background-repeat: no-repeat;
@@ -329,7 +322,7 @@
   .srv_count {
     top: clamp(1.875rem, 1.2535rem + 2.0804vw, 3.75rem);
     left: clamp(1.875rem, 1.2535rem + 2.0804vw, 3.75rem);
-    @apply text-black left-0 right-0 m-auto text-base font-medium z-[3] absolute size-[50px] border border-primary-500 grid place-items-center rounded-full bg-gradient-to-r from-primary-400 to-secondary-200 bg-bottom-left bg-no-repeat transition-colors duration-300 ease-linear;
+    @apply text-black left-0 right-0 m-auto text-base font-medium z-[3] absolute size-[50px] border border-primary-500 grid place-items-center rounded-full bg-gradient-to-r from-primary-400 to-primary-200 bg-bottom-left bg-no-repeat transition-colors duration-300 ease-linear;
     background-position: 200% 100%;
   }
 

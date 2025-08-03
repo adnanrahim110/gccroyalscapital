@@ -1,9 +1,11 @@
+import { motion } from "motion/react";
 import React, { useRef } from "react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { shade_3 } from "../../assets";
 import { services } from "../../constants";
+import { MotionInView, variants, viewportOnce20 } from "../../utils/motion";
 import Subtitle from "../ui/Subtitle";
 import SwiperBtn from "../ui/SwiperBtn";
 import ServiceSlide from "./ServiceSlide";
@@ -11,7 +13,10 @@ import ServiceSlide from "./ServiceSlide";
 const ServiceSec = ({ second = false }) => {
   const swiperRef = useRef(null);
   return (
-    <section
+    <MotionInView
+      as={motion.section}
+      v={variants.slideUp}
+      viewport={viewportOnce20}
       className="bg-center bg-no-repeat -mt-10 lg:rounded-t-[40px] relative overflow-hidden"
       style={{ backgroundImage: `url(${shade_3})` }}
     >
@@ -81,7 +86,7 @@ const ServiceSec = ({ second = false }) => {
           </div>
         </div>
       </div>
-    </section>
+    </MotionInView>
   );
 };
 
