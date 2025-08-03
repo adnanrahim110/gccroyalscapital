@@ -38,10 +38,20 @@ const Home = () => {
                     <div className="lg:w-1/2 flex flex-col grow-0 shrink basis-auto gap-y-[50px] pb-20">
                       <div className="*:mb-2.5">
                         <Subtitle>Cash Flow First</Subtitle>
-                        <h2 className="lg:pr-10">
+                        <MotionInView
+                          as={motion.h2}
+                          v={variants.fadeRise}
+                          viewport={{ once: true, amount: 1 }}
+                          className="lg:pr-10"
+                        >
                           Creative Finance <br /> Controlled Risk
-                        </h2>
-                        <p className="lg:pr-[15%]">
+                        </MotionInView>
+                        <MotionInView
+                          as={motion.p}
+                          v={variants.fadeRise}
+                          viewport={{ once: true, amount: 1 }}
+                          className="lg:pr-[15%]"
+                        >
                           At GRC Capital, we specialize in providing innovative
                           and strategic financial solutions. Our approach
                           combines creativity with structured risk management to
@@ -51,7 +61,7 @@ const Home = () => {
                           partnerships, deep industry expertise, and an
                           unwavering focus on cash flow generation, we unlock
                           value for our clients while mitigating risk.
-                        </p>
+                        </MotionInView>
                       </div>
                       <div className="inline-flex">
                         <Button to="/about-us">Learn More</Button>
@@ -62,7 +72,12 @@ const Home = () => {
               </div>
             </div>
             <div className="[flex:0_0_calc(28%_calc(60px_/_2))]">
-              <ul className="justify-start flex flex-col lg:flex-row gap-14 lg:gap-[20px]">
+              <MotionInView
+                as={motion.ul}
+                v={variants.slideUp}
+                viewport={{ once: true }}
+                className="justify-start flex flex-col lg:flex-row gap-14 lg:gap-[20px]"
+              >
                 {[
                   {
                     title: "Creative Solutions",
@@ -135,7 +150,7 @@ const Home = () => {
                     </div>
                   </li>
                 ))}
-              </ul>
+              </MotionInView>
             </div>
           </div>
         </div>

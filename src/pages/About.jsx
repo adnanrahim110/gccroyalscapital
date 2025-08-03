@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import {
@@ -16,6 +17,7 @@ import Faqs from "../components/layouts/Faqs";
 import Reviews from "../components/layouts/Reviews";
 import Hero from "../components/ui/Hero";
 import Subtitle from "../components/ui/Subtitle";
+import { MotionInView, variants, viewportOnce20 } from "../utils/motion";
 
 const About = () => {
   return (
@@ -27,12 +29,22 @@ const About = () => {
         title="About Us"
         text="We structure financing that turns strategy into cash flow, with smart execution and measured risk. Backed by deep expertise in Real Estate, Development, Oil & Gas, Renewable Energy, and Digital Infrastructure."
       />
-      <section className="pt-[120px] rounded-t-[60px] -mt-[60px] bg-[#F3F5F4] mb-[160px]">
+      <MotionInView
+        as={motion.section}
+        v={variants.slideUp}
+        viewport={viewportOnce20}
+        className="pt-[120px] rounded-t-[60px] -mt-[60px] bg-[#F3F5F4] mb-[160px]"
+      >
         <div className="flex flex-col text-center">
           <div className="inline-block mb-2.5">
             <Subtitle>Our Mission</Subtitle>
             <div className="mb-20">
-              <div className="text-[clamp(2.25rem,2.0549rem_+_0.8917vw,2.3rem)] font-medium *:mx-[7px] text-black">
+              <MotionInView
+                as={motion.div}
+                v={variants.slideUp}
+                viewport={{ once: true, amount: 1 }}
+                className="text-[clamp(2.25rem,2.0549rem_+_0.8917vw,2.3rem)] font-medium *:mx-[7px] text-black"
+              >
                 <div className="inline">
                   Our experienced team provides tailored office
                 </div>
@@ -42,7 +54,7 @@ const About = () => {
                 <div className="inline">
                   operate efficiently, no matter the size or sector.
                 </div>
-              </div>
+              </MotionInView>
             </div>
             <div className="relative">
               <div className="flex w-auto flex-wrap justify-center">
@@ -53,7 +65,10 @@ const About = () => {
                   { title: "96%", text: "Customer Retention Rate" },
                 ].map((item, idx) => {
                   return (
-                    <div
+                    <MotionInView
+                      as={motion.div}
+                      v={variants.slideUp}
+                      viewport={{ once: true, amount: 1 }}
                       key={idx}
                       className="lg:w-fit relative float-left min-h-px cursor-pointer"
                     >
@@ -71,15 +86,18 @@ const About = () => {
                           {item.text}
                         </h5>
                       </div>
-                    </div>
+                    </MotionInView>
                   );
                 })}
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section
+      </MotionInView>
+      <MotionInView
+        as={motion.section}
+        v={variants.slideUp}
+        viewport={viewportOnce20}
         className="rounded-t-[40px] -mt-10 bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${shade_4})` }}
       >
@@ -120,7 +138,13 @@ const About = () => {
                     img: network,
                   },
                 ].map((item, idx) => (
-                  <div key={idx} className="p-2.5 2xl:p-5 [flex:0_0_50%]">
+                  <MotionInView
+                    as={motion.div}
+                    v={variants.slideUp}
+                    viewport={{ once: true, amount: 1 }}
+                    key={idx}
+                    className="p-2.5 2xl:p-5 [flex:0_0_50%]"
+                  >
                     <div className="overflow-hidden rounded-[20px] flex h-full backdrop-blur-[10px] bg-white/[0.05] text-left justify-start">
                       <div className="p-[30px] space-y-3.5 mb-1.5">
                         <div className="inline-flex">
@@ -141,13 +165,13 @@ const About = () => {
                         <p className="text-white text-sm">{item.text}</p>
                       </div>
                     </div>
-                  </div>
+                  </MotionInView>
                 ))}
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </MotionInView>
       <Brands />
       <Faqs />
       <Reviews second />

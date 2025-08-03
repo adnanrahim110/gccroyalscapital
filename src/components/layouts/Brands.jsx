@@ -1,8 +1,10 @@
+import { motion } from "motion/react";
 import React from "react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { MotionInView, variants, viewportOnce20 } from "../../utils/motion";
 import Company from "../svgs/Company";
 import Company2 from "../svgs/Company2";
 import Company3 from "../svgs/Company3";
@@ -26,7 +28,10 @@ const brandSLides = [
 
 const Brands = ({ white = false }) => {
   return (
-    <section
+    <MotionInView
+      as={motion.section}
+      v={variants.slideUp}
+      viewport={viewportOnce20}
       className={`rounded-t-[40px] -mt-10 ${
         white ? "bg-white" : "bg-[#F3F5F4]"
       }`}
@@ -34,7 +39,13 @@ const Brands = ({ white = false }) => {
       <div className="flex flex-col pt-[100px] pb-[120px]">
         <div className="pb-10 text-center space-y-2.5">
           <Subtitle>Our Company</Subtitle>
-          <h2>Trusted Business Partner</h2>
+          <MotionInView
+            as={motion.h2}
+            v={variants.slideUp}
+            viewport={{ once: true, amount: 1 }}
+          >
+            Trusted Business Partner
+          </MotionInView>
         </div>
         <div className="w-full">
           {brandSLides.map((item, idx) => {
@@ -86,7 +97,7 @@ const Brands = ({ white = false }) => {
           transition-timing-function: linear;
         }
       `}</style>
-    </section>
+    </MotionInView>
   );
 };
 

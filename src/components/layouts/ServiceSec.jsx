@@ -29,16 +29,30 @@ const ServiceSec = ({ second = false }) => {
           }`}
         >
           <Subtitle white={second}>Professional Guidance</Subtitle>
-          <h2 className={second ? "text-white" : "text-black"}>
+          <MotionInView
+            as={motion.h2}
+            v={variants.slideUp}
+            viewport={{ once: true, amount: 1 }}
+            className={second ? "text-white" : "text-black"}
+          >
             Precision <span className="text-primary">Tailored</span> Services
-          </h2>
-          <p>
+          </MotionInView>
+          <MotionInView
+            as={motion.p}
+            v={variants.slideUp}
+            viewport={{ once: true, amount: 1 }}
+          >
             We don’t just offer services, we craft strategies. Each solution is
             shaped by industry insight, financial acumen, and a commitment to
             results.
-          </p>
+          </MotionInView>
         </div>
-        <div className="w-full relative">
+        <MotionInView
+          as={motion.div}
+          v={variants.slideUp}
+          viewport={{ once: true, amount: 1 }}
+          className="w-full relative"
+        >
           <Swiper
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             modules={[Navigation]}
@@ -72,7 +86,11 @@ const ServiceSec = ({ second = false }) => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div>
+          <MotionInView
+            as={motion.div}
+            v={variants.slideUp}
+            viewport={{ once: true, amount: 1 }}
+          >
             <SwiperBtn
               white={second}
               direction={"prev"}
@@ -83,8 +101,8 @@ const ServiceSec = ({ second = false }) => {
               direction={"next"}
               onClick={() => swiperRef.current.slideNext()}
             />
-          </div>
-        </div>
+          </MotionInView>
+        </MotionInView>
       </div>
     </MotionInView>
   );

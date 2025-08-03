@@ -25,7 +25,6 @@ function ServiceSlide({ service, dark = false }) {
           />
         </div>
       </div>
-
       <div className="p-[clamp(1.25rem,1.1464rem_+_0.3467vw,1.5625rem)_clamp(1.25rem,1.0417rem_+_0.6944vw,1.875rem)_0] z-0">
         <div className="flex items-center justify-between gap-9 xl:gap-[50px] mb-[clamp(1.25rem,1.0417rem_+_0.6944vw,1.875rem)]">
           <div className="mr-5">

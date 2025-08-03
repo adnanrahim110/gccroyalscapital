@@ -1,14 +1,19 @@
+import { motion } from "motion/react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { faq_sec, shade_4 } from "../../assets";
 import { contactDetails, faqs } from "../../constants";
+import { MotionInView, variants, viewportOnce20 } from "../../utils/motion";
 import Button from "../ui/Button";
 import Subtitle from "../ui/Subtitle";
 
 const Faqs = () => {
   const [activeFaq, setActiveFaq] = useState(0);
   return (
-    <section
+    <MotionInView
+      as={motion.section}
+      v={variants.slideUp}
+      viewport={viewportOnce20}
       className="flex flex-col bg-cover bg-center bg-no-repeat rounded-t-[40px] -mt-10"
       style={{ backgroundImage: `url(${shade_4})` }}
     >
@@ -16,20 +21,32 @@ const Faqs = () => {
         <div className="w-full lg:w-[65%] flex flex-col gap-y-10 grow-0 shrink basis-auto">
           <div className="*:not-last:mb-2.5 text-white text-center lg:text-left">
             <Subtitle white>Our Faq</Subtitle>
-            <h2 className="text-white">
+            <MotionInView
+              as={motion.h2}
+              v={variants.slideUp}
+              viewport={{ once: true, amount: 1 }}
+              className="text-white"
+            >
               Frequently Asked&nbsp;
               <span className="inline-block bg-clip-text mr-[0.2em] text-transparent bg-gradient-to-r from-primary-500 to-primary-300">
                 Questions
               </span>
-            </h2>
-            <p>
+            </MotionInView>
+            <MotionInView
+              as={motion.p}
+              v={variants.slideUp}
+              viewport={{ once: true, amount: 1 }}
+            >
               Have questions about our services, processes, or financial
               products? Here are some of the most commonly asked questions.
-            </p>
+            </MotionInView>
           </div>
           <div className="w-full space-y-5">
             {faqs.map((faq, idx) => (
-              <div
+              <MotionInView
+                as={motion.div}
+                v={variants.fadeRise}
+                viewport={{ once: true, amount: 0.5 }}
                 key={idx}
                 className={`flex justify-start text-start flex-wrap w-full ${
                   idx === activeFaq ? "bg-left text-black" : "text-white"
@@ -67,7 +84,7 @@ const Faqs = () => {
                 >
                   <p>{faq.answer}</p>
                 </div>
-              </div>
+              </MotionInView>
             ))}
           </div>
         </div>
@@ -90,22 +107,40 @@ const Faqs = () => {
           </div>
           <div>
             <div className="mb-[50px] text-center space-y-2.5">
-              <h4>Have Questions About Something?</h4>
-              <div className="text-black">
+              <MotionInView
+                as={motion.h4}
+                v={variants.slideUp}
+                viewport={{ once: true, amount: 1 }}
+              >
+                Have Questions About Something?
+              </MotionInView>
+              <MotionInView
+                as={motion.p}
+                v={variants.slideUp}
+                viewport={{ once: true, amount: 1 }}
+                className="text-black"
+              >
                 Check our FAQs or message us for a quick, clear answer.
-              </div>
+              </MotionInView>
             </div>
           </div>
-          <div>
+          <MotionInView
+            as={motion.div}
+            v={variants.slideUp}
+            viewport={{ once: true, amount: 1 }}
+          >
             <Button to="/contact-us">Contact Us</Button>
-          </div>
+          </MotionInView>
           <div className="mt-[60px]">
             <div className="flex flex-col">
               {contactDetails.map((item, idx) => {
                 const Wrapper = item.url ? Link : "span";
                 const Icon = item.icon;
                 return (
-                  <div
+                  <MotionInView
+                    as={motion.div}
+                    v={variants.slideUp}
+                    viewport={{ once: true, amount: 1 }}
                     key={idx}
                     className="p-[15px] [flex:0_0_100%] text-center text-black"
                   >
@@ -137,14 +172,14 @@ const Faqs = () => {
                         </h5>
                       </div>
                     </div>
-                  </div>
+                  </MotionInView>
                 );
               })}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </MotionInView>
   );
 };
 

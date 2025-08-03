@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import "swiper/css";
@@ -12,6 +13,7 @@ import {
   shade_3,
 } from "../../assets";
 import { reviews } from "../../constants";
+import { MotionInView, variants } from "../../utils/motion";
 import Button from "../ui/Button";
 import Subtitle from "../ui/Subtitle";
 
@@ -25,11 +27,22 @@ const Reviews = ({ second = false }) => {
           <div className="w-[760px] max-w-full pb-[50px] text-center">
             <div className="*:not-last:mb-2.5">
               <Subtitle>Testimonials</Subtitle>
-              <h2>Hear What Our CLients Say</h2>
-              <div className="px-[5%]">
+              <MotionInView
+                as={motion.h2}
+                v={variants.slideUp}
+                viewport={{ once: true, amount: 1 }}
+              >
+                Hear What Our CLients Say
+              </MotionInView>
+              <MotionInView
+                as={motion.p}
+                v={variants.slideUp}
+                viewport={{ once: true, amount: 1 }}
+                className="px-[5%]"
+              >
                 At GRC Capital, client satisfaction is our top priority. Here's
                 what our partners say about their experience with us.
-              </div>
+              </MotionInView>
             </div>
           </div>
         </div>
@@ -41,18 +54,31 @@ const Reviews = ({ second = false }) => {
                 style={{ backgroundImage: `url(${hero_shade})` }}
               />
               <div className="pb-[50px] *:not-last:mb-2.5 relative z-[1]">
-                <h4>
+                <MotionInView
+                  as={motion.h2}
+                  v={variants.slideUp}
+                  viewport={{ once: true, amount: 1 }}
+                >
                   Trusted By Over <br /> 100+ Loyal Clients
-                </h4>
-                <div>
+                </MotionInView>
+                <MotionInView
+                  as={motion.p}
+                  v={variants.slideUp}
+                  viewport={{ once: true, amount: 1 }}
+                >
                   From real estate developers to oil & gas innovators, our
                   clients trust us to deliver results through insight-driven
                   financial solutions.
-                </div>
+                </MotionInView>
               </div>
-              <div className="inline-flex cursor-pointer relative z-[1]">
+              <MotionInView
+                as={motion.div}
+                v={variants.slideUp}
+                viewport={{ once: true, amount: 1 }}
+                className="inline-flex cursor-pointer relative z-[1]"
+              >
                 <Button to="/contact-us">Contact Us</Button>
-              </div>
+              </MotionInView>
             </div>
             <div className="w-full lg:w-[45%] flex gap-5">
               <div className="w-full max-h-[550px] relative">
@@ -113,7 +139,12 @@ const Reviews = ({ second = false }) => {
             </div>
           </div>
           <div className="w-full lg:w-1/4 flex flex-col gap-[30px]">
-            <div className="bg-white rounded-[20px] p-[45px] flex flex-col gap-5 justify-center text-center relative">
+            <MotionInView
+              as={motion.div}
+              v={variants.fadeRise}
+              viewport={{ once: true, amount: 0.8 }}
+              className="bg-white rounded-[20px] p-[45px] flex flex-col gap-5 justify-center text-center relative"
+            >
               <div
                 className="absolute inset-0 bg-cover bg-no-repeat bg-center opacity-15"
                 style={{ backgroundImage: `url(${shade_2})` }}
@@ -197,8 +228,13 @@ const Reviews = ({ second = false }) => {
                   </span>
                 </li>
               </ul>
-            </div>
-            <div className="bg-gradient-to-r from-primary-600 to-primary-300 p-[30px] flex flex-col relative rounded-[20px]">
+            </MotionInView>
+            <MotionInView
+              as={motion.div}
+              v={variants.fadeRise}
+              viewport={{ once: true, amount: 0.8 }}
+              className="bg-gradient-to-r from-primary-600 to-primary-300 p-[30px] flex flex-col relative rounded-[20px]"
+            >
               <div
                 className="absolute inset-0 bg-center opacity-10 "
                 style={{ backgroundImage: `url(${rev_sec})` }}
@@ -214,10 +250,15 @@ const Reviews = ({ second = false }) => {
                   alt=""
                 />
               </div>
-            </div>
+            </MotionInView>
           </div>
         </div>
-        <div className="bg-[#161616] p-10 w-full rounded-[20px] relative overflow-hidden">
+        <MotionInView
+          as={motion.div}
+          v={variants.slideUp}
+          viewport={{ once: true, amount: 0.7 }}
+          className="bg-[#161616] p-10 w-full rounded-[20px] relative overflow-hidden"
+        >
           <div
             className="absolute bg-no-repeat bg-cover inset-0 opacity-60"
             style={{
@@ -261,7 +302,7 @@ const Reviews = ({ second = false }) => {
               </div>
             </div>
           </div>
-        </div>
+        </MotionInView>
       </div>
     </section>
   );

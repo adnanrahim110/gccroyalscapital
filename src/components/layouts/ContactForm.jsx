@@ -1,13 +1,18 @@
+import { motion } from "motion/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { contact_sec } from "../../assets";
+import { MotionInView, variants, viewportOnce20 } from "../../utils/motion";
 import Button from "../ui/Button";
 import Form from "../ui/Form";
 import Subtitle from "../ui/Subtitle";
 
 const ContactForm = () => {
   return (
-    <section
+    <MotionInView
+      as={motion.section}
+      v={variants.slideUp}
+      viewport={viewportOnce20}
       className="bg-center bg-no-repeat bg-cover rounded-t-[40px] -mt-10 relative"
       style={{ backgroundImage: `url(${contact_sec})` }}
     >
@@ -17,14 +22,25 @@ const ContactForm = () => {
         <div className="lg:w-1/2 px-5 py-10 lg:p-10 flex flex-col rounded-[20px] bg-white/70 backdrop-blur-[7px]">
           <div className="space-y-2.5 pb-[15px]">
             <Subtitle>Let's Talk</Subtitle>
-            <h2>Connect With Us</h2>
+            <MotionInView
+              as={motion.h2}
+              v={variants.slideUp}
+              viewport={{ once: true, amount: 1 }}
+            >
+              Connect With Us
+            </MotionInView>
           </div>
           <div>
-            <p className="ml-[2%]">
+            <MotionInView
+              as={motion.p}
+              v={variants.slideUp}
+              viewport={{ once: true, amount: 1 }}
+              className="ml-[2%]"
+            >
               Let’s explore how GRC Capital can support your financial
               ambitions. Whether you're ready to partner or simply want more
               details, reach out today.
-            </p>
+            </MotionInView>
           </div>
           <div>
             <div className="pt-10">
@@ -33,7 +49,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-    </section>
+    </MotionInView>
   );
 };
 

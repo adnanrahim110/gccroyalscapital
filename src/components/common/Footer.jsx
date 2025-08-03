@@ -1,12 +1,17 @@
+import { motion } from "motion/react";
 import React from "react";
 import { HiPaperAirplane } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { logo3, shade_3 } from "../../assets";
 import { navigation, socialDetails } from "../../constants";
+import { MotionInView, variants, viewportOnce20 } from "../../utils/motion";
 
 const Footer = () => {
   return (
-    <footer
+    <MotionInView
+      as={motion.footer}
+      v={variants.slideUp}
+      viewport={viewportOnce20}
       className="bg-black bg-cover bg-center bg-no-repeat rounded-t-[40px] -mt-10"
       style={{ backgroundImage: `url(${shade_3})` }}
     >
@@ -246,7 +251,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </footer>
+    </MotionInView>
   );
 };
 
