@@ -4,25 +4,47 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  banks_bank_of_america,
+  banks_bank_of_china,
+  banks_barclay,
+  banks_bnp_paribas,
+  banks_citibank,
+  banks_credit_agricole,
+  banks_credit_suisse,
+  banks_dbs,
+  banks_deutsche,
+  banks_hbsc,
+  banks_industrial_and_commercial_bank_of_china,
+  banks_jpmorgan_chase,
+  banks_mufg,
+  banks_standard_chartered,
+} from "../../assets";
 import { MotionInView, variants, viewportOnce20 } from "../../utils/motion";
-import Company from "../svgs/Company";
-import Company2 from "../svgs/Company2";
-import Company3 from "../svgs/Company3";
-import Finance from "../svgs/Finance";
-import Finance2 from "../svgs/Finance2";
-import Growtech from "../svgs/Growtech";
-import Growth from "../svgs/Growth";
-import Hertz from "../svgs/Hertz";
-import Narrow from "../svgs/Narrow";
-import Teamwork from "../svgs/Teamwork";
 import Subtitle from "../ui/Subtitle";
 
 const brandSLides = [
   {
-    slides: [Company, Finance, Growth, Hertz, Growtech],
+    slides: [
+      banks_hbsc,
+      banks_bnp_paribas,
+      banks_bank_of_america,
+      banks_citibank,
+      banks_standard_chartered,
+      banks_dbs,
+      banks_mufg,
+    ],
   },
   {
-    slides: [Company2, Narrow, Teamwork, Company3, Finance2],
+    slides: [
+      banks_barclay,
+      banks_jpmorgan_chase,
+      banks_credit_suisse,
+      banks_deutsche,
+      banks_bank_of_china,
+      banks_industrial_and_commercial_bank_of_china,
+      banks_credit_agricole,
+    ],
   },
 ];
 
@@ -79,8 +101,12 @@ const Brands = ({ white = false }) => {
                           key={slideIdx}
                           className="backface-hidden! w-auto!"
                         >
-                          <div className="inline-flex text-center relative items-center justify-center text-black/30 hover:text-black hover:border-transparent text-[clamp(5.625rem,4.9283rem_+_3.1847vw,8.75rem)] p-[clamp(1.25rem,1.1107rem_+_0.6369vw,1.875rem)_clamp(1.5625rem,1.2838rem_+_1.2739vw,2.8125rem)] m-[0_clamp(0.625rem,0.5553rem_+_0.3185vw,0.9375rem)] border border-black/10 rounded-[20px] bg_grad3 cursor-pointer *:h-auto!">
-                            <SlideComp />
+                          <div className="inline-flex text-center relative items-center justify-center text-black/30 hover:text-black hover:border-transparent text-[clamp(5.625rem,4.9283rem_+_3.1847vw,8.75rem)] p-[clamp(1.25rem,1.1107rem_+_0.6369vw,1.875rem)_clamp(1.5625rem,1.2838rem_+_1.2739vw,2.8125rem)] m-[0_clamp(0.625rem,0.5553rem_+_0.3185vw,0.9375rem)] border border-black/10 rounded-[20px] bg_grad3 cursor-pointer">
+                            <img
+                              src={SlideComp}
+                              className="h-[40px] w-auto max-w-[auto]"
+                              alt=""
+                            />
                           </div>
                         </SwiperSlide>
                       );
