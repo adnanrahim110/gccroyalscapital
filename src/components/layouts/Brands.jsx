@@ -66,7 +66,7 @@ const Brands = ({ white = false }) => {
             v={variants.slideUp}
             viewport={{ once: true, amount: 1 }}
           >
-            Trusted Business Partner
+            Trusted Financial Institutions We Work With
           </MotionInView>
         </div>
         <div className="w-full">
